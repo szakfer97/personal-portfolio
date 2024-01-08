@@ -13,7 +13,7 @@ export default function About() {
           <h2 className="py-4">Who am I</h2>
           <p className="py-2 text-gray-600">
             Dedicated and enthusiastic software developer with a deep passion
-            for continuous self- improvement. My professional journey is driven
+            for continuous self-improvement. My professional journey is driven
             by a desire to excel in both soft and hard skills while fostering
             productive collaborations with colleagues. I firmly believe that
             great software development extends beyond code; it is about
@@ -40,7 +40,12 @@ export default function About() {
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
-              Check out some of my projects.
+              Check out my skills
+            </p>
+          </Link>
+          <Link href="/#projects">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Check out my projects
             </p>
           </Link>
         </div>
