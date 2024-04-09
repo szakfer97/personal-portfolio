@@ -31,7 +31,7 @@ export default function Footer() {
           >
             React
           </a>{" "}
-          and
+          and{" "}
           <a
             href="https://www.typescriptlang.org/"
             target="_blank"
@@ -40,6 +40,15 @@ export default function Footer() {
           >
             TypeScript
           </a>{" "}
+          using{" "}
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Tailwind CSS
+          </a>
         </p>
       </div>
     </footer>
