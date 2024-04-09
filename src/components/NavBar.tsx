@@ -8,10 +8,74 @@ export default function NavBar() {
     <nav className="bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex items-center space-x-10">
             <div className="flex-shrink-0">
               <a href="#" className="text-white text-lg font-semibold">
-                Logo
+                <svg
+                  fill="white"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 422.765 422.765"
+                  width="52px"
+                  height="52px"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <g>
+                      {" "}
+                      <path d="M276.503,48.541V0H86.493L7.026,79.467v294.757h139.235v48.541h269.478V48.541H276.503z M82.392,23.899v51.467H30.925 L82.392,23.899z M21.026,89.366h75.366V14h166.111v346.224H21.026V89.366z M401.739,408.765H160.261v-34.541h209.518v-14h-93.275 v-15.38h93.275v-14h-93.275v-15.38h93.275v-14h-93.275v-15.38h93.275v-14h-93.275v-15.38h93.275v-14h-93.275v-15.38h93.275v-14 h-93.275v-42.205h93.275v-14h-93.275V62.541h125.235V408.765z"></path>{" "}
+                      <rect
+                        x="52.986"
+                        y="104.746"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                      <rect
+                        x="52.986"
+                        y="160.951"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                      <rect
+                        x="52.986"
+                        y="190.331"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                      <rect
+                        x="52.986"
+                        y="219.711"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                      <rect
+                        x="52.986"
+                        y="249.091"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                      <rect
+                        x="52.986"
+                        y="278.471"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                      <rect
+                        x="52.986"
+                        y="307.851"
+                        width="177.558"
+                        height="14"
+                      ></rect>{" "}
+                    </g>{" "}
+                  </g>
+                </svg>
               </a>
             </div>
             <div className="hidden md:block">
@@ -26,13 +90,19 @@ export default function NavBar() {
                   href="#"
                   className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  About
+                  About me
                 </a>
                 <a
                   href="#"
                   className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Projects
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Skills
                 </a>
                 <a
                   href="#"
@@ -98,13 +168,19 @@ export default function NavBar() {
                 href="#"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
               >
-                About
+                About me
               </a>
               <a
                 href="#"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
               >
                 Projects
+              </a>
+              <a
+                href="#"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
+              >
+                Skills
               </a>
               <a
                 href="#"
