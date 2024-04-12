@@ -1,4 +1,30 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 lg:p-8">
       <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl">
@@ -31,9 +57,7 @@ export default function Contact() {
       <div className="mt-8 lg:mt-12">
         <form
           className="w-full max-w-lg mx-auto bg-white p-4 shadow-md rounded-lg lg:max-w-xl"
-          action="mailto:szakfer97@gmail.com"
-          method="POST"
-          encType="text/plain"
+          onSubmit={handleSubmit}
         >
           <div className="mb-4">
             <label
@@ -44,10 +68,11 @@ export default function Contact() {
             </label>
             <input
               className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-              id="first-name"
-              name="first-name"
               type="text"
-              placeholder="Your first name"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
               required
             />
           </div>
@@ -60,10 +85,11 @@ export default function Contact() {
             </label>
             <input
               className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-              id="last-name"
-              name="last-name"
               type="text"
-              placeholder="Your last name"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
               required
             />
           </div>
@@ -76,10 +102,11 @@ export default function Contact() {
             </label>
             <input
               className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+              type="email"
               id="email"
               name="email"
-              type="email"
-              placeholder="Your email address"
+              value={formData.email}
+              onChange={handleChange}
               required
             />
           </div>
@@ -94,8 +121,9 @@ export default function Contact() {
               className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
               id="message"
               name="message"
-              rows={4}
-              placeholder="Your message"
+              rows={5}
+              value={formData.message}
+              onChange={handleChange}
               required
             ></textarea>
           </div>
