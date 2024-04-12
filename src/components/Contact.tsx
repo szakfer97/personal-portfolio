@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 lg:p-8">
       <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl">
-        Contact info
+        Let's get in touch!
       </h1>
       <div className="mt-8 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-3">
         <div className="bg-white p-4 shadow-md rounded-lg">
@@ -48,6 +48,7 @@ export default function Contact() {
               name="first-name"
               type="text"
               placeholder="Your first name"
+              required
             />
           </div>
           <div className="mb-4">
@@ -63,6 +64,7 @@ export default function Contact() {
               name="last-name"
               type="text"
               placeholder="Your last name"
+              required
             />
           </div>
           <div className="mb-4">
@@ -78,6 +80,7 @@ export default function Contact() {
               name="email"
               type="email"
               placeholder="Your email address"
+              required
             />
           </div>
           <div className="mb-4">
@@ -93,6 +96,7 @@ export default function Contact() {
               name="message"
               rows={4}
               placeholder="Your message"
+              required
             ></textarea>
           </div>
           <div className="flex items-center justify-center mt-4">
