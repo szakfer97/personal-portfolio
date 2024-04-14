@@ -62,7 +62,7 @@ export default function Contact() {
           <div className="mb-4">
             <label
               className="block mb-2 text-sm font-medium text-gray-900"
-              htmlFor="first-name"
+              htmlFor="firstName"
             >
               First Name
             </label>
@@ -79,7 +79,7 @@ export default function Contact() {
           <div className="mb-4">
             <label
               className="block mb-2 text-sm font-medium text-gray-900"
-              htmlFor="last-name"
+              htmlFor="lastName"
             >
               Last Name
             </label>
@@ -108,6 +108,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
+              autoComplete="email"
             />
           </div>
           <div className="mb-4">
