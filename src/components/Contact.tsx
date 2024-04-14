@@ -1,6 +1,12 @@
 export default function Contact() {
+  const email = "szakfer97@gmail.com";
+  const phoneNumber = "0771405782";
+  const address = "Satu Mare, Romania";
+  const linkedInUrl = "https://www.linkedin.com/in/szakacsi-ferenc-adam/";
+  const githubUrl = "https://github.com/szakfer97";
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 lg:p-8">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 lg:p-8">
       <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl mb-8">
         Let's get in touch!
       </h1>
@@ -9,10 +15,10 @@ export default function Contact() {
           <p className="text-lg font-medium text-gray-800 mb-2">
             Email:
             <a
-              href="mailto:szakfer97@gmail.com"
+              href={`mailto:${email}`}
               className="text-blue-500 font-bold hover:underline ml-2"
             >
-              szakfer97@gmail.com
+              {email}
             </a>
           </p>
         </div>
@@ -20,13 +26,13 @@ export default function Contact() {
           <p className="text-lg font-medium text-gray-800 mb-2">
             Phone:
             <button
-              className="font-bold text-blue-500 ml-2"
+              className="font-bold text-blue-500 hover:underline ml-2"
               onClick={(e) => {
                 e.preventDefault();
-                navigator.clipboard.writeText("0771405782");
+                navigator.clipboard.writeText(phoneNumber);
               }}
             >
-              0771405782
+              {phoneNumber}
             </button>
           </p>
         </div>
@@ -39,7 +45,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Satu Mare, Romania
+              {address}
             </a>
           </p>
         </div>
@@ -47,7 +53,7 @@ export default function Contact() {
           <p className="text-lg font-medium text-gray-800 mb-2">
             LinkedIn:
             <a
-              href="https://www.linkedin.com/in/szakacsi-ferenc-adam/"
+              href={linkedInUrl}
               className="text-blue-500 font-bold hover:underline ml-2"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,7 +66,7 @@ export default function Contact() {
           <p className="text-lg font-medium text-gray-800 mb-2">
             GitHub:
             <a
-              href="https://github.com/szakfer97"
+              href={githubUrl}
               className="text-blue-500 font-bold hover:underline ml-2"
               target="_blank"
               rel="noopener noreferrer"
