@@ -1,17 +1,22 @@
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { Fragment } from "react";
+import { Suspense, lazy } from "react";
+
+const NavBar = lazy(() => import("./components/NavBar"));
+const Contact = lazy(() => import("./components/Contact"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Footer = lazy(() => import("./components/Footer"));
 
 export default function App() {
   return (
-    <div>
-      <NavBar />
-      <Contact />
-      <Projects />
-      <Skills />
-      <Footer />
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Fragment>
+        <NavBar />
+        <Contact />
+        <Projects />
+        <Skills />
+        <Footer />
+      </Fragment>
+    </Suspense>
   );
 }
