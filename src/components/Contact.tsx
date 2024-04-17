@@ -15,7 +15,9 @@ export default function Contact() {
           <p className="text-lg font-medium text-gray-800 mb-2">
             Email:
             <a
-              href={`mailto:${email}`}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-500 font-bold hover:underline ml-2"
             >
               {email}
@@ -40,7 +42,7 @@ export default function Contact() {
           <p className="text-lg font-medium text-gray-800 mb-2">
             Address:
             <a
-              href="https://www.google.com/maps/place/Satu+Mare/@47.7097799,23.6336141,11z"
+              href={address}
               className="text-blue-500 font-bold hover:underline ml-2"
               target="_blank"
               rel="noopener noreferrer"
