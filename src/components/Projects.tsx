@@ -8,7 +8,7 @@ export default function Projects() {
     {
       name: "Personal portfolio",
       description:
-        "My personal portfolio website built with Next.js, Tailwind CSS, and TypeScript.",
+        "My personal portfolio website built with TypeScript, React and Tailwind CSS.",
       link: "https://github.com/szakfer97/personal-portfolio",
       techStack: ["TypeScript", "React", "Tailwind CSS"],
     },
@@ -67,9 +67,20 @@ export default function Projects() {
     <div>
       <NavBar />
       <div className="flex flex-col items-center justify-center p-4 lg:p-8">
-        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
+        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out hover:text-blue-500">
           Projects
         </h1>
+        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500">
+          Here are some of the projects I have worked on.
+        </p>
+        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500">
+          Each card contains the project's name, description and the
+          technologies used.
+        </p>
+        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500">
+          Clicking on their name will redirect you to their respective GitHub
+          repository.
+        </p>
         <div className="mt-8 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-3">
           {projects.map((project) => (
             <div
