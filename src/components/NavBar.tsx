@@ -51,16 +51,18 @@ export default function NavBar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                //{" "}
+                {" "}
                 {navLinks.map(({ name, path }) => (
                   <NavLink
                     key={path}
                     to={path}
-                    className="text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-white"
                     style={({ isActive }) =>
                       isActive
                         ? {
                             fontWeight: "bold",
+                            backgroundColor: "white",
+                            color: "blue",
                           }
                         : {}
                     }
@@ -126,6 +128,8 @@ export default function NavBar() {
                     isActive
                       ? {
                           fontWeight: "bold",
+                          backgroundColor: "white",
+                          color: "blue",
                         }
                       : {}
                   }
