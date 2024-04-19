@@ -58,7 +58,7 @@ export default function Skills() {
   return (
     <div>
       <NavBar />
-      <div className="flex items-center justify-center mb-8">
+      <div className="flex items-center justify-center my-8">
         <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Skills
         </h1>
