@@ -7,8 +7,16 @@ import {
   FaGithub,
   FaGitlab,
   FaJira,
+  FaWordpress,
+  FaShopify,
 } from "react-icons/fa";
-import { SiTypescript, SiMongodb, SiExpress, SiJest } from "react-icons/si";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiJest,
+} from "react-icons/si";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
@@ -27,6 +35,11 @@ export default function Skills() {
       name: "TypeScript",
       url: "https://www.typescriptlang.org/",
     },
+    {
+      Icon: SiTailwindcss,
+      name: "Tailwind CSS",
+      url: "https://tailwindcss.com/",
+    },
     { Icon: FaNodeJs, name: "Node.js", url: "https://nodejs.org/" },
     { Icon: SiExpress, name: "Express", url: "https://www.expressjs.com/" },
     { Icon: SiMongodb, name: "MongoDB", url: "https://www.mongodb.com/" },
@@ -38,6 +51,8 @@ export default function Skills() {
     },
     { Icon: FaGithub, name: "GitHub", url: "https://github.com/" },
     { Icon: FaGitlab, name: "GitLab", url: "https://about.gitlab.com/" },
+    { Icon: FaWordpress, name: "Wordpress", url: "https://wordpress.org/" },
+    { Icon: FaShopify, name: "Shopify", url: "https://www.shopify.com/" },
   ];
 
   return (
