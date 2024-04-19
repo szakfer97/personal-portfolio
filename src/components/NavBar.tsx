@@ -56,7 +56,7 @@ export default function NavBar() {
                   <NavLink
                     key={path}
                     to={path}
-                    className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-white"
+                    className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-white animate-pulse"
                     style={({ isActive }) =>
                       isActive
                         ? {
