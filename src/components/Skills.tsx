@@ -9,6 +9,8 @@ import {
   FaJira,
 } from "react-icons/fa";
 import { SiTypescript, SiMongodb, SiExpress, SiJest } from "react-icons/si";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export default function Skills() {
   const icons = [
@@ -40,6 +42,7 @@ export default function Skills() {
 
   return (
     <div>
+      <NavBar />
       <div className="flex items-center justify-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Skills
@@ -66,6 +69,7 @@ export default function Skills() {
           </a>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

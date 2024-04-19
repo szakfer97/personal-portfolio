@@ -1,8 +1,16 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => setIsOpen(!isOpen);
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+    { name: "Projects", path: "/projects" },
+    { name: "Skills", path: "/skills" },
+  ];
 
   return (
     <nav className="bg-gray-800">
@@ -10,7 +18,7 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-10">
             <div className="flex-shrink-0">
-              <a href="#" className="text-white text-lg font-semibold">
+              <a href="/" className="text-white text-lg font-semibold">
                 <svg
                   fill="#ffffff"
                   version="1.1"
@@ -43,36 +51,23 @@ export default function NavBar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="#"
-                  className="text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  About me
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Projects
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Skills
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Contact
-                </a>
+                //{" "}
+                {navLinks.map(({ name, path }) => (
+                  <NavLink
+                    key={path}
+                    to={path}
+                    className="text-white px-3 py-2 rounded-md text-sm font-medium"
+                    style={({ isActive }) =>
+                      isActive
+                        ? {
+                            fontWeight: "bold",
+                          }
+                        : {}
+                    }
+                  >
+                    {name}
+                  </NavLink>
+                ))}
               </div>
             </div>
           </div>
@@ -121,36 +116,23 @@ export default function NavBar() {
         {isOpen && (
           <div className="md:hidden" id="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700"
-              >
-                Home
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
-              >
-                About me
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
-              >
-                Projects
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
-              >
-                Skills
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
-              >
-                Contact
-              </a>
+              {" "}
+              {navLinks.map(({ name, path }) => (
+                <NavLink
+                  key={path}
+                  to={path}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700"
+                  style={({ isActive }) =>
+                    isActive
+                      ? {
+                          fontWeight: "bold",
+                        }
+                      : {}
+                  }
+                >
+                  {name}
+                </NavLink>
+              ))}
             </div>
           </div>
         )}

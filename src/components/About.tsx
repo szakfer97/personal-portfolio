@@ -1,3 +1,11 @@
+import NavBar from "./NavBar";
+import Footer from "./Footer";
+
 export default function About() {
-  return <div></div>;
+  return (
+    <div>
+      <NavBar />
+      <Footer />
+    </div>
+  );
 }
