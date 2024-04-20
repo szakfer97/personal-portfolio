@@ -18,7 +18,10 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-10">
             <div className="flex-shrink-0">
-              <a href="/" className="text-white text-lg font-semibold">
+              <a
+                href="/"
+                className="text-white text-lg font-semibold animate-pulse"
+              >
                 <svg
                   fill="#ffffff"
                   version="1.1"
