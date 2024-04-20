@@ -1,4 +1,6 @@
 import {
+  FaFigma,
+  FaGit,
   FaHtml5,
   FaCss3,
   FaJs,
@@ -7,8 +9,6 @@ import {
   FaGithub,
   FaGitlab,
   FaJira,
-  FaWordpress,
-  FaShopify,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -45,16 +45,16 @@ export default function Skills() {
         "Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in HTML.",
     },
     {
-      Icon: FaReact,
-      name: "React",
-      description:
-        "React is an open-source, front-end JavaScript library for building user interfaces.",
-    },
-    {
       Icon: SiTypescript,
       name: "TypeScript",
       description:
         "TypeScript is a superset of JavaScript that adds static types to the language.",
+    },
+    {
+      Icon: FaReact,
+      name: "React",
+      description:
+        "React is an open-source, front-end JavaScript library for building user interfaces.",
     },
     {
       Icon: SiTailwindcss,
@@ -93,6 +93,18 @@ export default function Skills() {
         "Jira is a software development tool by Atlassian that combines an issue tracking system, Kanban process workflow management tool, and project management functionality.",
     },
     {
+      Icon: FaFigma,
+      name: "Figma",
+      description:
+        "Figma is a collaborative design and prototyping tool that allows you to create, share, and collaborate on designs.",
+    },
+    {
+      Icon: FaGit,
+      name: "Git",
+      description:
+        "Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+    },
+    {
       Icon: FaGithub,
       name: "GitHub",
       description: "GitHub is a web-based Git repository hosting service.",
@@ -102,18 +114,6 @@ export default function Skills() {
       name: "GitLab",
       description:
         "GitLab is a web-based DevOps lifecycle tool that provides version control and CI/CD pipeline features.",
-    },
-    {
-      Icon: FaWordpress,
-      name: "Wordpress",
-      description:
-        "WordPress is a free and open-source software web application that uses PHP and a MySQL or MariaDB database.",
-    },
-    {
-      Icon: FaShopify,
-      name: "Shopify",
-      description:
-        "Shopify is an e-commerce platform that enables businesses to sell products online.",
     },
   ];
 
@@ -135,6 +135,13 @@ export default function Skills() {
         <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
           Skills
         </h1>
+      </div>
+      <div className="flex items-center justify-center my-2">
+        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
+          I have worked on various projects, from building and maintaining
+          full-stack applications to improving the efficiency of existing
+          systems.
+        </p>
       </div>
       <div className="flex items-center justify-center my-2">
         <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">

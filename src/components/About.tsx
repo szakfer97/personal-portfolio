@@ -1,6 +1,7 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import PersonalPic from "../assets/personalpic.svg";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -42,20 +43,65 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
             Skills
           </h2>
-          <ul className="text-lg text-gray-600 list-disc pl-8 mx-auto max-w-[40rem] hover:text-blue-500 cursor-pointer">
-            <li className="mb-2 hover:text-blue-500 cursor-pointer">
-              Programming Languages: JavaScript, TypeScript, Python
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500 cursor-pointer">
+            Throughout my professional journey, I have been involved in various
+            important projects and roles.
+          </p>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500 cursor-pointer">
+            Below is a list of the technologies I have used in my projects:
+          </p>
+          <ul className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">
+              JavaScript
             </li>
-            <li className="mb-2 hover:text-blue-500 cursor-pointer">
-              Frameworks: React, Vue, Node.js
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">HTML</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">CSS</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">
+              TypeScript
             </li>
-            <li className="mb-2 hover:text-blue-500 cursor-pointer">
-              Databases: MongoDB, PostgreSQL
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">React</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">
+              Tailwind
             </li>
-            <li className="mb-2 hover:text-blue-500 cursor-pointer">
-              Tools: Git, VS Code, Docker
-            </li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">Node</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">Express</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">MongoDB</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">Jest</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">Jira</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">Figma</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">Git</li>
+            <li className="mt-2 hover:text-blue-500 cursor-pointer">GitHub</li>
+            <li className="my-2 hover:text-blue-500 cursor-pointer">GitLab</li>
           </ul>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500 cursor-pointer">
+            For more information on my acquired skills, you can check out the{" "}
+            <Link
+              to="/skills"
+              className="text-blue-500 hover:text-blue-800 cursor-pointer"
+              style={{ textDecoration: "underline" }}
+            >
+              Skills
+            </Link>{" "}
+            component.
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center mt-8">
+          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
+            Projects
+          </h2>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500 cursor-pointer">
+            Some of my projects were quite challenging. For more information,
+            you can check out the{" "}
+            <Link
+              to="/projects"
+              className="text-blue-500 hover:text-blue-800 cursor-pointer"
+              style={{ textDecoration: "underline" }}
+            >
+              Projects
+            </Link>{" "}
+            component.
+          </p>
         </div>
 
         <div className="flex flex-col items-center mt-8">
