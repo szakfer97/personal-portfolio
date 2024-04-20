@@ -27,7 +27,6 @@ export default function About() {
             applications to improving the efficiency of existing systems.
           </p>
         </div>
-
         <div className="flex flex-col items-center mt-8">
           <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
             Education
@@ -38,7 +37,6 @@ export default function About() {
             problem-solving, teamwork, and adaptability.
           </p>
         </div>
-
         <div className="flex flex-col items-center mt-8">
           <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
             Skills
@@ -85,7 +83,6 @@ export default function About() {
             component.
           </p>
         </div>
-
         <div className="flex flex-col items-center mt-8">
           <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
             Projects
@@ -103,7 +100,6 @@ export default function About() {
             component.
           </p>
         </div>
-
         <div className="flex flex-col items-center mt-8">
           <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
             Certifications
@@ -113,7 +109,6 @@ export default function About() {
             Cybersecurity Essentials by XYZ University.
           </p>
         </div>
-
         <div className="flex flex-col items-center mt-8">
           <h2 className="text-2xl font-bold mb-4 hover:text-blue-500 cursor-pointer">
             Hobbies
