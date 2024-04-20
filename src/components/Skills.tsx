@@ -132,17 +132,17 @@ export default function Skills() {
     <div>
       <NavBar />
       <div className="flex items-center justify-center mt-8 mb-4">
-        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
+        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
           Skills
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
+        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
           Below are some of the technologies I have experience with.
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="text-base font-medium text-gray-600 lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-400 hover:text-blue-400">
+        <p className="text-base font-medium text-gray-600 lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
           Click on the icons to learn more about my experience with each one of
           them.
         </p>
@@ -176,11 +176,11 @@ export default function Skills() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mt-8 flex items-center justify-center">
-              <h2 className="text-3xl font-bold text-gray-800 hover:text-blue-500">
+              <h2 className="text-3xl font-bold text-gray-800 hover:text-blue-500 cursor-pointer">
                 {currentTech.name}
               </h2>
             </div>
-            <p className="mt-4 hover:text-blue-500">
+            <p className="mt-4 hover:text-blue-500 cursor-pointer">
               {currentTech.description}
             </p>
             <div className="mt-8 flex items-center justify-center">

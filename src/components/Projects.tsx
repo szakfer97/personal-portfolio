@@ -67,17 +67,17 @@ export default function Projects() {
     <div>
       <NavBar />
       <div className="flex flex-col items-center justify-center p-4 lg:p-8">
-        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out hover:text-blue-500">
+        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out hover:text-blue-500 cursor-pointer">
           Projects
         </h1>
-        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500">
+        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500 cursor-pointer">
           Here are some of the projects I have worked on.
         </p>
-        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500">
+        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500 cursor-pointer">
           Each card contains the project's name, description and the
           technologies used.
         </p>
-        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500">
+        <p className="mt-4 text-lg text-gray-600 hover:text-blue-500 cursor-pointer">
           Clicking on their name will redirect you to their respective GitHub
           repository.
         </p>
@@ -96,12 +96,14 @@ export default function Projects() {
                   {project.name}
                 </p>
               </a>
-              <p className="mt-2 text-lg">{project.description}</p>
+              <p className="mt-2 text-lg cursor-pointer">
+                {project.description}
+              </p>
               <div className="mt-4">
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-gray-200 text-gray-800 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:bg-blue-100"
+                    className="bg-gray-200 text-gray-800 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:bg-blue-100 cursor-pointer"
                   >
                     <FaCode className="mr-1 group-hover:text-blue-500 transition-colors duration-200 ease-in-out" />
                     {tech}

@@ -12,12 +12,12 @@ export default function Contact() {
     <div>
       <NavBar />
       <div className="flex flex-col items-center justify-center min-h-screen p-4 lg:p-8">
-        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl mb-8 transition-colors duration-200 hover:text-blue-500">
+        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl mb-8 transition-colors duration-200 hover:text-blue-500 cursor-pointer">
           Let's get in touch!
         </h1>
         <div className="max-w-4xl grid gap-8 lg:grid-cols-3 lg:gap-12 lg:max-w-none">
           <div className="bg-white p-8 shadow-md rounded-lg lg:p-12 transition-colors duration-200 hover:shadow-2xl hover:bg-blue-50">
-            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500">
+            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500 cursor-pointer">
               Email:
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
@@ -30,7 +30,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="bg-white p-8 shadow-md rounded-lg lg:p-12 transition-colors duration-200 hover:shadow-2xl hover:bg-blue-50">
-            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500">
+            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500 cursor-pointer">
               Phone:
               <button
                 className="font-bold text-blue-500 hover:underline ml-2 transition-colors duration-200 hover:text-blue-300"
@@ -44,7 +44,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="bg-white p-8 shadow-md rounded-lg lg:p-12 transition-colors duration-200 hover:shadow-2xl hover:bg-blue-50">
-            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500">
+            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500 cursor-pointer">
               Address:
               <a
                 href={address}
@@ -57,7 +57,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="bg-white p-8 shadow-md rounded-lg lg:p-12 transition-colors duration-200 hover:shadow-2xl hover:bg-blue-50">
-            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500">
+            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500 cursor-pointer">
               LinkedIn:
               <a
                 href={linkedInUrl}
@@ -70,7 +70,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="bg-white p-8 shadow-md rounded-lg lg:p-12 transition-colors duration-200 hover:shadow-2xl hover:bg-blue-50">
-            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500">
+            <p className="text-lg font-medium text-gray-800 mb-2 transition-colors duration-200 hover:text-blue-500 cursor-pointer">
               GitHub:
               <a
                 href={githubUrl}
