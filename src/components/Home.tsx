@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import CVFile from "../assets/CV.pdf";
+import PersonalPortrait from "../assets/personalportrait.svg";
 
 export default function Home() {
   return (
@@ -10,8 +13,13 @@ export default function Home() {
           Hello, I'm Szakacsi Ferenc-Adam!
         </h1>
         <p className="text-lg text-gray-600 mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer">
-          Welcome to my personal portfolio.
+          Welcome to my personal website.
         </p>
+        <img
+          src={PersonalPortrait}
+          alt="Personal Portrait"
+          className="mt-2 mb-8 w-64 mx-auto hover:opacity-75 transition-opacity duration-300"
+        />
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="About me"
@@ -34,6 +42,11 @@ export default function Home() {
             description="In my free time, I enjoy playing sports, watching movies, and listening to music."
           />
         </div>
+        <Link to={CVFile} download target="_blank" rel="noreferrer">
+          <button className="my-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+            Download my CV
+          </button>
+        </Link>
       </div>
       <Footer />
     </div>
