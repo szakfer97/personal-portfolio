@@ -85,7 +85,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="bg-white p-4 shadow-md rounded-lg flex flex-col group transition-transform duration-200 ease-in-out hover:scale-105"
+              className="bg-white p-4 shadow-md rounded-lg flex flex-col transition-transform duration-200 ease-in-out hover:scale-105"
             >
               <a
                 href={project.link}

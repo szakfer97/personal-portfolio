@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Fragment } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import PersonalPic from "../assets/personalpic.svg";
@@ -45,65 +44,82 @@ export default function About() {
             text: "I graduated with a Bachelor's degree in Computer Science from Universitatea din Oradea. My academic journey has taught me critical skills in problem-solving, teamwork, and adaptability.",
           },
         ].map((section, index) => (
-          <Fragment key={index}>
+          <section
+            key={index}
+            className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105"
+          >
             <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
               {section.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
               {section.text}
             </p>
-          </Fragment>
+          </section>
         ))}
-        <h2 className="text-2xl font-bold my-4 hover:text-blue-500">Skills</h2>
-        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-          Below is a list of the technologies I have used in my projects:
-        </p>
-        <ul className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
-          {skills.map((skill, index) => (
-            <li key={index} className="mt-2 hover:text-blue-500">
-              {skill}
-            </li>
-          ))}
-        </ul>
-        <p className="my-4 text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-          For more detailed information on my acquired skills, you can check out
-          the{" "}
-          <Link
-            to="/skills"
-            className="text-blue-500 hover:text-blue-800"
-            style={{ textDecoration: "underline" }}
-          >
+        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
             Skills
-          </Link>{" "}
-          section of this website.
-        </p>
-        <h2 className="text-2xl font-bold my-4 hover:text-blue-500">
-          Projects
-        </h2>
-        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-          Some of my projects were quite challenging. For more information, you
-          can check out the{" "}
-          <Link
-            to="/projects"
-            className="text-blue-500 hover:text-blue-800"
-            style={{ textDecoration: "underline" }}
-          >
+          </h2>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            Below is a list of the technologies I have used in my projects:
+          </p>
+          <ul className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
+            {skills.map((skill, index) => (
+              <li key={index} className="mt-2 hover:text-blue-500">
+                {skill}
+              </li>
+            ))}
+          </ul>
+          <p className="my-4 text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            For more detailed information on my acquired skills, you can check
+            out the{" "}
+            <Link
+              to="/skills"
+              className="text-blue-500 hover:text-blue-800"
+              style={{ textDecoration: "underline" }}
+            >
+              Skills
+            </Link>{" "}
+            section of this website.
+          </p>
+        </div>
+        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
             Projects
-          </Link>{" "}
-          section of this website.
-        </p>
-        <h2 className="text-2xl font-bold my-4 hover:text-blue-500">
-          Certifications
-        </h2>
-        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-          I am certified in Agile Scrum Master by ABC Company and in
-          Cybersecurity Essentials by XYZ University.
-        </p>
-        <h2 className="text-2xl font-bold my-4 hover:text-blue-500">Hobbies</h2>
-        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-          When I'm not working, you can find me enjoying the simple pleasures of
-          playing guitar, hiking, or binge-watching movies.
-        </p>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            Some of my projects were quite challenging. For more information,
+            you can check out the{" "}
+            <Link
+              to="/projects"
+              className="text-blue-500 hover:text-blue-800"
+              style={{ textDecoration: "underline" }}
+            >
+              Projects
+            </Link>{" "}
+            section of this website.
+          </p>
+        </div>
+        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
+            Certificates
+          </h2>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            I am certified in Advanced English by the University of Cambridge
+            and in different programming languages and technologies by
+            SoloLearn.
+          </p>
+        </div>
+        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold my-4 hover:text-blue-500">
+            Hobbies
+          </h2>
+          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            In my free time, I enjoy playing sports, reading books, playing
+            video games and coding side projects in my spare time.
+          </p>
+        </div>
+
         <p className="my-4 text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
           Interested in getting in touch?
         </p>

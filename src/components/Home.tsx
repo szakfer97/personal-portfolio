@@ -36,12 +36,12 @@ export default function Home() {
             alt="Personal Portrait"
             className="mt-2 mb-8 w-64 lg:mx-auto hover:opacity-75 transition-opacity duration-300"
           />
-          <div className="items-start flex flex-col gap-6 hover:cursor-pointer">
+          <div className="items-start flex flex-col gap-6 hover:cursor-pointer font-bold">
             <a
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
               <FaGithub className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
               {gitHub}
@@ -50,12 +50,12 @@ export default function Home() {
               href={linkedInUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
               <FaLinkedin className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
               {linkedIn}
             </a>
-            <div className="flex items-center group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
+            <div className="flex items-center text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
               <FaPhoneSquareAlt className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
               <button
                 onClick={(e) => {
@@ -66,7 +66,7 @@ export default function Home() {
                 {phoneNumber}
               </button>
             </div>
-            <div className="flex items-center group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
+            <div className="flex items-center text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
               <FaMapMarkerAlt className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
               <button
                 onClick={(e) => {
@@ -81,7 +81,7 @@ export default function Home() {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
               <AiOutlineMail className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
               {email}
@@ -91,7 +91,7 @@ export default function Home() {
               download
               target="_blank"
               rel="noreferrer"
-              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
               <FaRegFilePdf className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
               Download my CV
@@ -101,23 +101,25 @@ export default function Home() {
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="About me"
-            description="I am a software developer with a passion for web development, data analysis and problem solving."
+            description="Dedicated and enthusiastic software developer with a deep passion for continuous selfimprovement. My professional journey is driven by a desire to excel in both soft and hard skills while
+            fostering productive collaborations with colleagues. I firmly believe that great software
+            development extends beyond code; it's about teamwork, communication, and adaptability."
           />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="Experience"
-            description="I have worked in various roles, from entry-level to senior positions, and have gained experience in different industries."
+            description="I have worked in various roles, from full-stack JavaScript developer to software developer. I have experience in developing web applications, mobile applications, and desktop applications."
           />
           <Section
             title="Education"
-            description="I have a background in computer science and hold a degree from a reputable university."
+            description="I have a background in computer science and hold a bachelor's degree from Universiatea din Oradea.Currently doing my master's degree in computer software engineering."
           />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="Hobbies"
-            description="In my free time, I enjoy playing sports, watching movies, and listening to music."
+            description="In my free time, I enjoy playing sports, reading books, playing video games and coding side projects in my spare time."
           />
         </div>
       </div>

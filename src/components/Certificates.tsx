@@ -4,34 +4,44 @@ import Footer from "./Footer";
 export default function Certificates() {
   const certificates = [
     {
-      name: "Google Digital Garage Scholarship",
+      name: "Cambridge Advanced English Certificate",
       description:
-        "Scholarship awarded by Google Developers Program for participation in Digital Garage events",
+        "Certificate awarded upon successful completion of the Cambridge advanced English course",
     },
     {
-      name: "Microsoft Imagine Cup 2021",
+      name: "SoloLearn ReactJS Certificate",
       description:
-        "Winner of Microsoft Imagine Cup 2021, an annual hackathon organised by Microsoft",
+        "Certificate awarded upon successful completion of the SoloLearn ReactJS course",
     },
     {
-      name: "Adobe Spark Fellowship",
+      name: "SoloLearn JavaScript Certificate",
       description:
-        "Fellowship awarded by Adobe for exceptional work in the field of design and technology",
+        "Certificate awarded upon successful completion of the SoloLearn JavaScript course",
     },
     {
-      name: "Codeium AI Scholarship",
+      name: "SoloLearn HTML Certificate",
       description:
-        "Scholarship awarded by Codeium, a leading AI company for software engineering assistance",
+        "Certificate awarded upon successful completion of the SoloLearn HTML course",
     },
     {
-      name: "Github Campus Expert",
+      name: "SoloLearn CSS Certificate",
       description:
-        "Certification as a Github Campus Expert, recognising exceptional contributions to the Github Campus community",
+        "Certificate awarded upon successful completion of the SoloLearn CSS course ",
     },
     {
-      name: "UI/UX Design Course Certificate",
+      name: "SoloLearn C# Certificate",
       description:
-        "Certificate awarded upon successful completion of a comprehensive UI/UX design course",
+        "Certificate awarded upon successful completion of the SoloLearn C# course",
+    },
+    {
+      name: "SoloLearn Python Certificate",
+      description:
+        "Certificate awarded upon successful completion of the SoloLearn Python course",
+    },
+    {
+      name: "SoloLearn Java Certificate",
+      description:
+        "Certificate awarded upon successful completion of the SoloLearn Java course",
     },
   ];
   return (
