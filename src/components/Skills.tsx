@@ -132,24 +132,24 @@ export default function Skills() {
     <div>
       <NavBar />
       <div className="flex items-center justify-center mt-8 mb-4">
-        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
+        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Skills
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
+        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           I have worked on various projects, from building and maintaining
           full-stack applications to improving the efficiency of existing
           systems.
         </p>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
+        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Below are some of the technologies I have experience with.
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="text-base font-medium text-gray-600 lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500 cursor-pointer">
+        <p className="text-base font-medium text-gray-600 lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Click on the icons to learn more about my experience with each one of
           them.
         </p>
@@ -159,14 +159,14 @@ export default function Skills() {
           <div
             key={i}
             onClick={() => openModal({ name, description })}
-            className="self-center group cursor-pointer"
+            className="self-center hover:scale-110 cursor-pointer hover:text-blue-500"
           >
             <Icon
               size={80}
-              className={`mb-4 transition-transform transform-gpu group-hover:scale-110 hover:text-blue-500`}
+              className={`mb-4 transition-transform transform-gpu`}
             />
             <p
-              className={`text-center text-sm mt-2 mb-4 italic underline-offset-8 underline uppercase transition-opacity group-hover:opacity-100 hover:text-blue-500`}
+              className={`text-center text-sm mt-2 mb-4 italic underline-offset-8 underline uppercase transition-opacity group-hover:opacity-100`}
             >
               {name}
             </p>
@@ -183,11 +183,11 @@ export default function Skills() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mt-8 flex items-center justify-center">
-              <h2 className="text-3xl font-bold text-gray-800 hover:text-blue-500 cursor-pointer">
+              <h2 className="text-3xl font-bold text-gray-800 hover:text-blue-500">
                 {currentTech.name}
               </h2>
             </div>
-            <p className="mt-4 hover:text-blue-500 cursor-pointer">
+            <p className="mt-4 hover:text-blue-500">
               {currentTech.description}
             </p>
             <div className="mt-8 flex items-center justify-center">

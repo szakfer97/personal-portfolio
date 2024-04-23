@@ -37,8 +37,8 @@ export default function Certificates() {
   return (
     <div>
       <NavBar />
-      <div className="flex flex-col items-center justify-center p-8 md:p-16 lg:p-24 group hover:scale-105 transition-transform duration-300">
-        <h1 className="text-4xl font-bold text-center md:text-5xl lg:text-6xl group-hover:text-blue-600 transition-colors duration-200">
+      <div className="flex flex-col items-center justify-center p-8 md:p-16 lg:p-24 transition-transform duration-300">
+        <h1 className="text-3xl font-bold text-gray-800 lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Certificates
         </h1>
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -50,7 +50,7 @@ export default function Certificates() {
               <h2 className="text-2xl font-bold text-blue-600 group-hover:text-blue-800 transition-colors duration-200">
                 {certificate.name}
               </h2>
-              <p className="text-gray-500 mt-4 mb-8 md:mb-10 hover:scale-110">
+              <p className="text-gray-500 mt-4 mb-8 md:mb-10">
                 {certificate.description}
               </p>
             </div>
