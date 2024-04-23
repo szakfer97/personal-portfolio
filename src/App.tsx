@@ -3,7 +3,6 @@ import { Suspense, lazy } from "react";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
-const Contact = lazy(() => import("./components/Contact"));
 const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
 
@@ -11,7 +10,6 @@ export default function App() {
   const routes = [
     { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },
-    { path: "/contact", element: <Contact /> },
     { path: "/projects", element: <Projects /> },
     { path: "/skills", element: <Skills /> },
   ];
