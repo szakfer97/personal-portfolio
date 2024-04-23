@@ -5,6 +5,7 @@ const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
 const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
+const Certificates = lazy(() => import("./components/Certificates"));
 
 export default function App() {
   const routes = [
@@ -12,6 +13,7 @@ export default function App() {
     { path: "/about", element: <About /> },
     { path: "/projects", element: <Projects /> },
     { path: "/skills", element: <Skills /> },
+    { path: "/certificates", element: <Certificates /> },
   ];
   return (
     <BrowserRouter>

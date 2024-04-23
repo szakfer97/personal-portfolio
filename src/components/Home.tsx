@@ -1,10 +1,25 @@
-import { lazy } from "react";
+import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import {
+  FaPhoneSquareAlt,
+  FaMapMarkerAlt,
+  FaRegFilePdf,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 import PersonalPortrait from "../assets/personalportrait.svg";
-const Content = lazy(() => import("./Content"));
+import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 
 export default function Home() {
+  const email = "szakfer97@gmail.com";
+  const phoneNumber = "0771405782";
+  const address = "Satu Mare, Romania";
+  const gitHub = "szakfer97";
+  const linkedIn = "Szakacsi Ferenc-Adam";
+  const linkedInUrl = "https://www.linkedin.com/in/szakacsi-ferenc-adam/";
+  const githubUrl = "https://github.com/szakfer97";
   return (
     <div>
       <NavBar />
@@ -21,7 +36,67 @@ export default function Home() {
             alt="Personal Portrait"
             className="mt-2 mb-8 w-64 lg:mx-auto hover:opacity-75 transition-opacity duration-300"
           />
-          <Content />
+          <div className="items-start flex flex-col gap-6 hover:cursor-pointer">
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+            >
+              <FaGithub className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              {gitHub}
+            </a>
+            <a
+              href={linkedInUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+            >
+              <FaLinkedin className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              {linkedIn}
+            </a>
+            <div className="flex items-center group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
+              <FaPhoneSquareAlt className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigator.clipboard.writeText(phoneNumber);
+                }}
+              >
+                {phoneNumber}
+              </button>
+            </div>
+            <div className="flex items-center group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
+              <FaMapMarkerAlt className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigator.clipboard.writeText(address);
+                }}
+              >
+                {address}
+              </button>
+            </div>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+            >
+              <AiOutlineMail className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              {email}
+            </a>
+            <Link
+              to={CVFile}
+              download
+              target="_blank"
+              rel="noreferrer"
+              className="group text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+            >
+              <FaRegFilePdf className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              Download my CV
+            </Link>
+          </div>
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section

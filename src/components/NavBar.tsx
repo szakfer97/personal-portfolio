@@ -9,6 +9,7 @@ export default function NavBar() {
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
+    { name: "Certificates", path: "/certificates" },
   ];
 
   return (
