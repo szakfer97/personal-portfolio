@@ -1,25 +1,10 @@
-import { Link } from "react-router-dom";
+import { lazy } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import {
-  FaPhoneSquareAlt,
-  FaMapMarkerAlt,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import PersonalPortrait from "../assets/personalportrait.svg";
+const Content = lazy(() => import("./Content"));
 
 export default function Home() {
-  const email = "szakfer97@gmail.com";
-  const phoneNumber = "0771405782";
-  const address = "Satu Mare, Romania";
-  const gitHub = "szakfer97";
-  const linkedIn = "Szakacsi Ferenc-Adam";
-  const linkedInUrl = "https://www.linkedin.com/in/szakacsi-ferenc-adam/";
-  const githubUrl = "https://github.com/szakfer97";
-
   return (
     <div>
       <NavBar />
@@ -30,82 +15,13 @@ export default function Home() {
         <p className="text-lg text-gray-600 mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer">
           Welcome to my personal website.
         </p>
-        <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-2 items-center mt-8 sm:mt-8 lg:mt-10">
+        <div className="w-full max-w-4xl mx-auto grid gap-8 grid-cols-2 items-center mt-8 lg:mt-10">
           <img
             src={PersonalPortrait}
             alt="Personal Portrait"
-            className="mt-2 mb-8 w-64 mx-auto hover:opacity-75 transition-opacity duration-300"
+            className="mt-2 mb-8 w-64 lg:mx-auto hover:opacity-75 transition-opacity duration-300"
           />
-          <div className="items-start flex flex-col gap-2">
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-blue-500 hover:text-blue-800 flex items-center flex-col sm:flex-row sm:items-start gap-2 transition-colors duration-200 hover:bg-blue-100 rounded-lg p-2"
-            >
-              <FaGithub className="inline h-6 w-6 mr-2 sm:mr-0 sm:mt-1 animate-pulse" />
-              <span className="mt-1 font-bold hover:underline ml-0 sm:ml-2 transition-colors duration-200">
-                {gitHub}
-              </span>
-            </a>
-            <a
-              href={linkedInUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-blue-500 hover:text-blue-900 flex items-center flex-col sm:flex-row sm:items-start gap-2 transition-colors duration-200 hover:bg-blue-100 rounded-lg p-2"
-            >
-              <FaLinkedin className="inline h-6 w-6 mr-2 sm:mr-0 sm:mt-1 animate-pulse" />
-              <span className="mt-1 font-bold hover:underline ml-0 sm:ml-2 transition-colors duration-200">
-                {linkedIn}
-              </span>
-            </a>
-            <div className="flex items-center text-blue-500 hover:text-blue-900 gap-2 transition-colors duration-200 hover:bg-blue-100 rounded-lg p-2">
-              <FaPhoneSquareAlt className="inline h-6 w-6 mr-2 sm:mr-0 sm:mt-1 animate-pulse" />
-              <button
-                className="mt-1 font-bold hover:underline ml-0 sm:ml-2 transition-colors duration-200"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigator.clipboard.writeText(phoneNumber);
-                }}
-              >
-                {phoneNumber}
-              </button>
-            </div>
-            <div className="flex items-center text-blue-500 hover:text-blue-900 gap-2 transition-colors duration-200 hover:bg-blue-100 rounded-lg p-2">
-              <FaMapMarkerAlt className="inline h-6 w-6 mr-2 sm:mr-0 sm:mt-1 animate-pulse" />
-              <button
-                className="mt-1 font-bold hover:underline ml-2 transition-colors duration-200"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigator.clipboard.writeText(address);
-                }}
-              >
-                {address}
-              </button>
-            </div>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-blue-500 hover:text-blue-900 flex items-center flex-col sm:flex-row sm:items-start gap-2 transition-colors duration-200 hover:bg-blue-100 rounded-lg p-2"
-            >
-              <AiOutlineMail className="inline h-6 w-6 mr-2 sm:mr-0 sm:mt-1 animate-pulse" />
-              <span className="mt-1 font-bold hover:underline ml-0 sm:ml-2 transition-colors duration-200">
-                {email}
-              </span>
-            </a>
-            <Link
-              to={CVFile}
-              download
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center ml-8 mt-1"
-            >
-              <button className="bg-blue-500 hover:bg-blue-900 text-white font-bold px-4 py-2 flex items-center gap-2 sm:justify-center lg:justify-start transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
-                <span className="block">Download my CV</span>
-              </button>
-            </Link>
-          </div>
+          <Content />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
