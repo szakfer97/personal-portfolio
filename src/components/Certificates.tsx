@@ -6,42 +6,52 @@ export default function Certificates() {
     {
       name: "Cambridge Advanced English Certificate",
       description:
-        "Certificate awarded upon successful completion of the Cambridge advanced English course",
+        "Certificate awarded upon successful completion of the Cambridge advanced English course.",
+    },
+    {
+      name: "Teaching Module Diploma",
+      description:
+        "Certificate awarded upon successful completion of the teaching module.",
+    },
+    {
+      name: "Collegium Varadinum Scientific Student Conference Commendation",
+      description:
+        "Commendation awarded upon succesful presentation of the conducted research in the subject of AI and its effects on society.",
     },
     {
       name: "SoloLearn ReactJS Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn ReactJS course",
+        "Certificate awarded upon successful completion of the SoloLearn ReactJS course.",
     },
     {
       name: "SoloLearn JavaScript Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn JavaScript course",
+        "Certificate awarded upon successful completion of the SoloLearn JavaScript course.",
     },
     {
       name: "SoloLearn HTML Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn HTML course",
+        "Certificate awarded upon successful completion of the SoloLearn HTML course.",
     },
     {
       name: "SoloLearn CSS Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn CSS course ",
+        "Certificate awarded upon successful completion of the SoloLearn CSS course.",
     },
     {
       name: "SoloLearn C# Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn C# course",
+        "Certificate awarded upon successful completion of the SoloLearn C# course.",
     },
     {
       name: "SoloLearn Python Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn Python course",
+        "Certificate awarded upon successful completion of the SoloLearn Python course.",
     },
     {
       name: "SoloLearn Java Certificate",
       description:
-        "Certificate awarded upon successful completion of the SoloLearn Java course",
+        "Certificate awarded upon successful completion of the SoloLearn Java course.",
     },
   ];
   return (
