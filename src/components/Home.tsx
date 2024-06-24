@@ -113,7 +113,7 @@ export default function Home() {
           />
           <Section
             title="Education"
-            description="I have a background in computer science and hold a bachelor's degree from Universiatea din Oradea.Currently doing my master's degree in computer software engineering."
+            description="I have a background in computer science and hold a bachelor's degree from Universiatea din Oradea. Currently doing my master's degree in computer software engineering."
           />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">

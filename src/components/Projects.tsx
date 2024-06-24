@@ -26,16 +26,29 @@ export default function Projects() {
       ],
     },
     {
-      name: "Quiz Show",
-      description: "Quiz show game written in JavaScript, HTML, and CSS.",
-      link: "https://github.com/szakfer97/quiz-show",
-      techStack: ["JavaScript", "HTML", "CSS"],
-    },
-    {
       name: "Football data visualization",
       description: "Football data visualization in Python.",
       link: "https://github.com/szakfer97/Football-Data-Viz",
       techStack: ["Python"],
+    },
+    {
+      name: "Tic tac toe",
+      description: "Tic-tac-toe game built with Vite, Svelte and TypeScript",
+      link: "https://github.com/szakfer97/tic-tac-toe",
+      techStack: ["Vite", "Svelte", "TypeScript", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      name: "Workout tracker",
+      description:
+        "Tracks the calories burned during a workout. Written Vite, Vue and TypeScript.",
+      link: "https://github.com/szakfer97/tic-tac-toe",
+      techStack: ["Vite", "Vue", "TypeScript", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      name: "Quiz show",
+      description: "Quiz show game written in JavaScript, HTML, and CSS.",
+      link: "https://github.com/szakfer97/quiz-show",
+      techStack: ["JavaScript", "HTML", "CSS"],
     },
     {
       name: "Random shapes drawing app",
