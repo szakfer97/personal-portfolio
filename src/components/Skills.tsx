@@ -137,20 +137,20 @@ export default function Skills() {
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
+        <p className="px-4 text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           I have worked on various projects, from building and maintaining
           full-stack applications to improving the efficiency of existing
           systems.
         </p>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
+        <p className="px-4 text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Below are the technologies I had the pleasure of working with during
           my time in the industry.
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="text-base font-medium text-gray-600 lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
+        <p className="px-4 text-base font-medium text-gray-600 lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
           Click on the icons to learn more about my experience with each one of
           them.
         </p>
