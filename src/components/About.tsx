@@ -88,8 +88,8 @@ export default function About() {
             Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-            Some of my projects were quite challenging. For more information,
-            you can check out the{" "}
+            Some of my projects were quite challenging. For more detailed
+            information, you can check out the{" "}
             <Link
               to="/projects"
               className="text-blue-500 hover:text-blue-800"
@@ -107,7 +107,15 @@ export default function About() {
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
             I am certified in Advanced English by the University of Cambridge
             and in different programming languages and technologies by
-            SoloLearn.
+            SoloLearn. For more detailed information, you can check out the{" "}
+            <Link
+              to="/certificates"
+              className="text-blue-500 hover:text-blue-800"
+              style={{ textDecoration: "underline" }}
+            >
+              Certificates
+            </Link>{" "}
+            section of this website.
           </p>
         </div>
         <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
@@ -120,12 +128,15 @@ export default function About() {
           </p>
         </div>
 
+        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          Getting interested?
+        </p>
         <p className="my-4 text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
-          Interested in getting in touch?
+          You can download my resume clicking the button below.
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
           <button className="my-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
-            Download my CV
+            Download CV
           </button>
         </Link>
       </div>

@@ -145,7 +145,8 @@ export default function Skills() {
       </div>
       <div className="flex items-center justify-center my-2">
         <p className="text-lg font-medium text-gray-800 lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-blue-500">
-          Below are some of the technologies I have experience with.
+          Below are the technologies I had the pleasure of working with during
+          my time in the industry.
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
