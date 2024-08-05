@@ -9,7 +9,7 @@ export default function Footer() {
         <span className="text-center text-transparent bg-blue-500 bg-clip-text font-bold text-sm animate-pulse">
           Copyright &copy; {currentYear} All rights reserved.
         </span>
-        <div className="flex flex-initial sm:flex-1 justify-center sm:justify-end space-x-6">
+        <div className="flex flex-initial sm:flex-1 justify-center sm:justify-end space-x-6 mt-2 sm:mt-0">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
             target="_blank"

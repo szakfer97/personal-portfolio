@@ -70,7 +70,7 @@ export default function Certificates() {
               <h2 className="text-2xl font-bold text-blue-600 group-hover:text-blue-800 transition-colors duration-200">
                 {certificate.name}
               </h2>
-              <p className="text-gray-500 mt-4 mb-8 md:mb-10">
+              <p className="text-gray-500 mt-4 mb-8">
                 {certificate.description}
               </p>
             </div>

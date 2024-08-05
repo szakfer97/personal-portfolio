@@ -27,7 +27,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-800 my-8 sm:text-5xl lg:text-6xl transition-all duration-300 hover:text-blue-500 hover:scale-105">
           Hello, I'm Szakacsi Ferenc-Adam!
         </h1>
-        <p className="text-lg text-gray-600 mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-blue-400 hover:scale-105">
+        <p className="text-lg text-gray-600 mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-blue-500 hover:scale-105">
           Welcome to my personal website.
         </p>
         <div className="w-full max-w-4xl mx-auto grid gap-8 grid-cols-2 items-center mt-8 lg:mt-10">

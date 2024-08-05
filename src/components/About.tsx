@@ -119,7 +119,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold my-4 hover:text-blue-500">
+          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
             Hobbies
           </h2>
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
@@ -131,7 +131,7 @@ export default function About() {
         <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
           Getting interested?
         </p>
-        <p className="my-4 text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
           You can download my resume clicking the button below.
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
