@@ -43,7 +43,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
-              <FaGithub className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <FaGithub className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {gitHub}
             </a>
             <a
@@ -52,11 +52,11 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
-              <FaLinkedin className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <FaLinkedin className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {linkedIn}
             </a>
             <div className="flex items-center text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
-              <FaPhoneSquareAlt className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <FaPhoneSquareAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
                   e.preventDefault();
@@ -67,7 +67,7 @@ export default function Home() {
               </button>
             </div>
             <div className="flex items-center text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
-              <FaMapMarkerAlt className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <FaMapMarkerAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
                   e.preventDefault();
@@ -83,7 +83,7 @@ export default function Home() {
               rel="noreferrer"
               className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
-              <AiOutlineMail className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <AiOutlineMail className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {email}
             </a>
             <Link
@@ -93,7 +93,7 @@ export default function Home() {
               rel="noreferrer"
               className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
             >
-              <FaRegFilePdf className="inline h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse" />
+              <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               Download my CV
             </Link>
           </div>
