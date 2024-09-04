@@ -24,10 +24,10 @@ export default function Home() {
     <div>
       <NavBar />
       <div className="container mx-auto flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 mt-8 sm:mt-16 lg:mt-20">
-        <h1 className="text-4xl font-bold text-gray-800 my-8 sm:text-5xl transition-all duration-300 hover:text-blue-500 hover:scale-105">
+        <h1 className="text-4xl font-bold my-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           Hello, I'm Szakacsi Ferenc-Adam!
         </h1>
-        <p className="text-lg text-gray-600 mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-blue-500 hover:scale-105">
+        <p className="text-lg mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           Welcome to my personal website.
         </p>
         <div className="w-full max-w-4xl mx-auto grid gap-8 grid-cols-2 items-center mt-8 lg:mt-10">
@@ -41,7 +41,7 @@ export default function Home() {
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <FaGithub className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {gitHub}
@@ -50,12 +50,12 @@ export default function Home() {
               href={linkedInUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <FaLinkedin className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {linkedIn}
             </a>
-            <div className="flex items-center text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
+            <div className="flex items-center hover:text-gray-800 hover:scale-105 transition-colors duration-200">
               <FaPhoneSquareAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
@@ -66,7 +66,7 @@ export default function Home() {
                 {phoneNumber}
               </button>
             </div>
-            <div className="flex items-center text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200">
+            <div className="flex items-center hover:text-gray-800 hover:scale-105 transition-colors duration-200">
               <FaMapMarkerAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
@@ -81,7 +81,7 @@ export default function Home() {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <AiOutlineMail className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {email}
@@ -91,7 +91,7 @@ export default function Home() {
               download
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:text-blue-900 hover:scale-105 transition-colors duration-200"
+              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               Download my CV
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="Hobbies"
-            description="In my free time, I enjoy playing sports, reading books, playing video games and coding side projects in my spare time."
+            description="In my free time, I enjoy playing sports, reading books, playing video games, watching TV shows and coding side projects."
           />
         </div>
       </div>

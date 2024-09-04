@@ -26,7 +26,7 @@ export default function About() {
     <div className="h-screen flex flex-col justify-between">
       <NavBar />
       <div className="flex flex-col justify-center items-center p-10">
-        <h1 className="text-5xl font-bold mb-2 hover:text-blue-500 ">
+        <h1 className="text-5xl font-bold mb-2 hover:text-gray-800">
           About Me
         </h1>
         <img
@@ -48,7 +48,7 @@ export default function About() {
             key={index}
             className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105"
           >
-            <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
               {section.title}
             </h2>
             <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
@@ -57,7 +57,7 @@ export default function About() {
           </section>
         ))}
         <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
             Skills
           </h2>
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
@@ -84,7 +84,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
             Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
@@ -101,7 +101,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
             Certificates
           </h2>
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
@@ -119,7 +119,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 hover:text-blue-500">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
             Hobbies
           </h2>
           <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
@@ -127,15 +127,14 @@ export default function About() {
             video games and coding side projects in my spare time.
           </p>
         </div>
-
-        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+        <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
           Getting interested?
         </p>
-        <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+        <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
           You can download my resume clicking the button below.
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
-          <button className="my-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-6 bg-white text-blue-500 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             Download CV
           </button>
         </Link>

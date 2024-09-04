@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#e9f4fc] text-[#1f2937] tracking-wide;
+  @apply bg-gradient-to-r from-blue-500 to-pink-600 text-white tracking-wide;
 }
 
 a:hover {

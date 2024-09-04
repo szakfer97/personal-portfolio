@@ -84,8 +84,8 @@ export default function NavBar() {
                   onClick={() => handleLanguageChange(lang)}
                   className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
                     language === lang
-                      ? "bg-white text-blue-600"
-                      : "text-white hover:bg-white hover:text-gray-800"
+                      ? "bg-white text-blue-500"
+                      : "text-white hover:bg-white hover:text-pink-600"
                   }`}
                 >
                   {lang}

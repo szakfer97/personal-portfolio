@@ -14,7 +14,7 @@ export default function Footer() {
             href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-white flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
+            className="text-pink-600 hover:text-white flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
           >
             <AiOutlineMail className="inline h-6 w-6 mr-1 animate-pulse" />
             <span className="sr-only sm:not-sr-only">Email</span>
@@ -23,7 +23,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/szakacsi-ferenc-adam/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-white flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
+            className="text-pink-600 hover:text-white flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
           >
             <FaLinkedin className="inline h-6 w-6 mr-1 animate-pulse" />
             <span className="sr-only sm:not-sr-only">LinkedIn</span>
@@ -32,7 +32,7 @@ export default function Footer() {
             href="https://github.com/szakfer97"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-white flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
+            className="text-pink-600 hover:text-white flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
           >
             <FaGithub className="inline h-6 w-6 mr-1 animate-pulse" />
             <span className="sr-only sm:not-sr-only">GitHub</span>
