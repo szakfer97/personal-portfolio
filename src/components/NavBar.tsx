@@ -62,7 +62,7 @@ export default function NavBar() {
                 <NavLink
                   key={path}
                   to={path}
-                  className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-blue-600 transition-colors duration-200"
+                  className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-pink-600 transition-colors duration-200"
                   style={({ isActive }) =>
                     isActive
                       ? {
@@ -163,8 +163,8 @@ export default function NavBar() {
                     onClick={() => handleLanguageChange(lang)}
                     className={`flex-1 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
                       language === lang
-                        ? "bg-white text-blue-600"
-                        : "text-gray-300 hover:bg-white hover:text-gray-800"
+                        ? "bg-white text-blue-500"
+                        : "text-gray-300 hover:bg-white hover:text-pink-600"
                     }`}
                   >
                     {lang}

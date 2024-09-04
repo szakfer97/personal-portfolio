@@ -37,11 +37,11 @@ export default function About() {
         {[
           {
             title: "Work Experience",
-            text: "As a Software Engineer at Devnest and Climarol Prest, I have gained experience in diverse areas of software development for the past 2 years. I have worked on various projects, from building and maintaining web applications to improving the efficiency of existing systems.",
+            text: "As a Software Developer at DevNest and Climarol Prest, I have gained experience in diverse areas of software development for the past 2 years. I have worked on various projects, from building and maintaining web applications to improving the efficiency of existing systems.",
           },
           {
             title: "Education",
-            text: "I graduated with a Bachelor's degree in Computer Science from Universitatea din Oradea. My academic journey has taught me critical skills in problem-solving, teamwork, and adaptability.",
+            text: "I graduated with a Bachelor's degree in Computer Science from Universitatea din Oradea. Currently pursuing my Master's degree in Software engineering. My academic journey has taught me critical skills in problem-solving, teamwork, and adaptability.",
           },
         ].map((section, index) => (
           <section
