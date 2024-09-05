@@ -160,7 +160,7 @@ export default function Skills() {
           <div
             key={i}
             onClick={() => openModal({ name, description })}
-            className="self-center hover:scale-110 cursor-pointer hover:text-gray-800"
+            className="self-center hover:scale-125 cursor-pointer hover:text-gray-800"
           >
             <Icon
               size={80}
@@ -188,13 +188,13 @@ export default function Skills() {
                 {currentTech.name}
               </h2>
             </div>
-            <p className="mt-4 hover:text-blue-500">
+            <p className="mt-4 text-gray-800 hover:text-blue-500">
               {currentTech.description}
             </p>
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}
-                className="px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:scale-105 active:scale-95 transition-transform duration-300"
+                className="px-8 py-3 bg-blue-500 rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
               >
                 <span className="text-xl font-bold">Close</span>
               </button>

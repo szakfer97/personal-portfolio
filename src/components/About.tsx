@@ -131,7 +131,7 @@ export default function About() {
           Getting interested?
         </p>
         <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
-          You can download my resume clicking the button below.
+          You can download my resume by clicking the button below.
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
           <button className="my-6 bg-white text-blue-500 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">

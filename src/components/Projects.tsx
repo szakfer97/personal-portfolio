@@ -41,7 +41,7 @@ export default function Projects() {
       name: "Workout tracker",
       description:
         "Tracks the calories burned during a workout. Written Vite, Vue and TypeScript.",
-      link: "https://github.com/szakfer97/tic-tac-toe",
+      link: "https://github.com/szakfer97/workout-tracker",
       techStack: ["Vite", "Vue", "TypeScript", "JavaScript", "HTML", "CSS"],
     },
     {
@@ -104,8 +104,8 @@ export default function Projects() {
                 href={project.link}
                 className="flex items-center cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105"
               >
-                <FaGithub className="text-gray-500 mr-2 group-hover:text-blue-500 transition-colors duration-200 ease-in-out" />
-                <p className="text-blue-500 font-medium hover:underline">
+                <FaGithub className="text-gray-500 mr-2 transition-colors duration-200 ease-in-out" />
+                <p className="text-blue-500 font-medium hover:text-pink-600 hover:underline">
                   {project.name}
                 </p>
               </a>
