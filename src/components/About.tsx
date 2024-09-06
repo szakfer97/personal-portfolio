@@ -32,7 +32,7 @@ export default function About() {
         <img
           src={PersonalPic}
           alt="Personal Picture"
-          className="my-4 w-64 mx-auto hover:opacity-75 transition-opacity duration-300"
+          className="my-4 w-64 mx-auto border-2 border-blue-500 hover:border-pink-600 transition-colors duration-300"
         />
         {[
           {

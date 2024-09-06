@@ -34,7 +34,7 @@ export default function Home() {
           <img
             src={PersonalPortrait}
             alt="Personal Portrait"
-            className="mt-2 mb-8 w-64 lg:mx-auto hover:opacity-75 transition-opacity duration-300"
+            className="mt-2 mb-8 w-64 lg:mx-auto border-2 border-blue-500 hover:border-pink-600 transition-colors duration-300"
           />
           <div className="items-start flex flex-col gap-6 hover:cursor-pointer font-bold">
             <a
