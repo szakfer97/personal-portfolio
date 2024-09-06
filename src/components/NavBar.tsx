@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "../utils/useTranslation";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("EN");
+  const { tr, changeLanguage, currentLanguage } = useTranslation();
   const toggleNavbar = () => setIsOpen(!isOpen);
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Skills", path: "/skills" },
-    { name: "Certificates", path: "/certificates" },
+    { name: tr("NAVBAR_HOME"), path: "/" },
+    { name: tr("NAVBAR_ABOUT"), path: "/about" },
+    { name: tr("NAVBAR_PROJECTS"), path: "/projects" },
+    { name: tr("NAVBAR_SKILLS"), path: "/skills" },
+    { name: tr("NAVBAR_CERTIFICATES"), path: "/certificates" },
   ];
 
   const handleLanguageChange = (lang: string) => {
-    setLanguage(lang);
+    changeLanguage(lang.toLowerCase());
   };
 
   return (
@@ -80,7 +81,7 @@ export default function NavBar() {
                   key={lang}
                   onClick={() => handleLanguageChange(lang)}
                   className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    language === lang
+                    currentLanguage === lang.toLowerCase()
                       ? "bg-white text-blue-500"
                       : "text-white hover:bg-white hover:text-pink-600"
                   }`}
@@ -98,7 +99,7 @@ export default function NavBar() {
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{tr("openMainMenu")}</span>
               <svg
                 className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +160,7 @@ export default function NavBar() {
                     key={lang}
                     onClick={() => handleLanguageChange(lang)}
                     className={`flex-1 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
-                      language === lang
+                      currentLanguage === lang.toLowerCase()
                         ? "bg-white text-blue-500"
                         : "text-gray-300 hover:bg-white hover:text-pink-600"
                     }`}
