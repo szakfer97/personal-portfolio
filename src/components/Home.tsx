@@ -98,6 +98,8 @@ export default function Home() {
             title="Experience"
             description="I have worked in various roles, from full-stack JavaScript developer to software developer. I have experience in developing web applications, mobile applications, and desktop applications."
           />
+        </div>
+        <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="Education"
             description="I have a background in computer science and hold a bachelor's degree from Universiatea din Oradea. Currently doing my master's degree in computer software engineering."

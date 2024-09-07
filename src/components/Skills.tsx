@@ -155,7 +155,7 @@ export default function Skills() {
           them.
         </p>
       </div>
-      <div className="grid gap-4 md:grid-cols-3 grid-cols-1 place-items-center">
+      <div className="grid gap-4 md:grid-cols-3 grid-cols-2 place-items-center">
         {icons.map(({ Icon, name, description }, i) => (
           <div
             key={i}

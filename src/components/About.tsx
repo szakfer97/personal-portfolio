@@ -52,7 +52,7 @@ export default function About() {
             <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-500">
               {section.title}
             </h2>
-            <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
               {section.text}
             </p>
           </section>
@@ -61,12 +61,12 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-500">
             Skills
           </h2>
-          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             Below is a list of the technologies I have used in my projects:
           </p>
           <ul className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
             {skills.map((skill, index) => (
-              <li key={index} className="mt-2 hover:text-blue-500">
+              <li key={index} className="mt-2">
                 {skill}
               </li>
             ))}
