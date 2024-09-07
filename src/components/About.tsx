@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import PersonalPic from "../assets/personalpic.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
+import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 
 export default function About() {
   const skills = [
@@ -32,7 +33,7 @@ export default function About() {
         <img
           src={PersonalPic}
           alt="Personal Picture"
-          className="my-4 w-64 mx-auto border-2 border-blue-500 hover:border-pink-600 transition-colors duration-300"
+          className="my-4 w-64 mx-auto border-2 border-pink-600 hover:border-blue-600 transition-colors duration-300"
         />
         {[
           {
@@ -46,36 +47,36 @@ export default function About() {
         ].map((section, index) => (
           <section
             key={index}
-            className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105"
+            className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105"
           >
-            <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
+            <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-500">
               {section.title}
             </h2>
-            <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+            <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
               {section.text}
             </p>
           </section>
         ))}
-        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
+        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-500">
             Skills
           </h2>
-          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
             Below is a list of the technologies I have used in my projects:
           </p>
-          <ul className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
+          <ul className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
             {skills.map((skill, index) => (
               <li key={index} className="mt-2 hover:text-blue-500">
                 {skill}
               </li>
             ))}
           </ul>
-          <p className="my-4 text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          <p className="my-4 text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             For more detailed information on my acquired skills, you can check
             out the{" "}
             <Link
               to="/skills"
-              className="text-blue-500 hover:text-blue-800"
+              className="text-pink-600 hover:text-blue-600"
               style={{ textDecoration: "underline" }}
             >
               Skills
@@ -83,16 +84,16 @@ export default function About() {
             section of this website.
           </p>
         </div>
-        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
+        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
             Projects
           </h2>
-          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             Some of my projects were quite challenging. For more detailed
             information, you can check out the{" "}
             <Link
               to="/projects"
-              className="text-blue-500 hover:text-blue-800"
+              className="text-pink-600 hover:text-blue-600"
               style={{ textDecoration: "underline" }}
             >
               Projects
@@ -100,17 +101,17 @@ export default function About() {
             section of this website.
           </p>
         </div>
-        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
+        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
             Certificates
           </h2>
-          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             I am certified in Advanced English by the University of Cambridge
             and in different programming languages and technologies by
             SoloLearn. For more detailed information, you can check out the{" "}
             <Link
               to="/certificates"
-              className="text-blue-500 hover:text-blue-800"
+              className="text-pink-600 hover:text-blue-600"
               style={{ textDecoration: "underline" }}
             >
               Certificates
@@ -118,11 +119,11 @@ export default function About() {
             section of this website.
           </p>
         </div>
-        <div className="bg-white p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-500">
+        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
             Hobbies
           </h2>
-          <p className="text-lg text-gray-600 max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-blue-500">
+          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             In my free time, I enjoy playing sports, reading books, playing
             video games and coding side projects in my spare time.
           </p>
@@ -131,11 +132,16 @@ export default function About() {
           Getting interested?
         </p>
         <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
-          You can download my resume by clicking the button below.
+          Click the buttons below to download my CV and cover letter.
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
-          <button className="my-6 bg-white text-blue-500 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-4 bg-black text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             Download CV
+          </button>
+        </Link>
+        <Link to={CoverFile} download target="_blank" rel="noreferrer">
+          <button className="my-2 bg-black text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+            Download Cover Letter
           </button>
         </Link>
       </div>

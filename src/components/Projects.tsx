@@ -98,27 +98,24 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="bg-white p-4 shadow-md rounded-lg flex flex-col transition-transform duration-200 ease-in-out hover:scale-105"
+              className="bg-black p-4 shadow-md rounded-lg flex flex-col transition-transform duration-200 ease-in-out hover:scale-105"
             >
               <a
                 href={project.link}
-                className="flex items-center cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105"
+                target="_blank"
+                className="flex items-center cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105 text-pink-600 hover:text-blue-600"
               >
-                <FaGithub className="text-gray-500 mr-2 transition-colors duration-200 ease-in-out" />
-                <p className="text-blue-500 font-medium hover:text-pink-600 hover:underline">
-                  {project.name}
-                </p>
+                <FaGithub className="mr-2" />
+                <p className="font-medium  hover:underline">{project.name}</p>
               </a>
-              <p className="mt-2 text-lg text-gray-800">
-                {project.description}
-              </p>
+              <p className="mt-2 text-lg">{project.description}</p>
               <div className="mt-4">
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-gray-200 text-gray-800 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:bg-blue-100 cursor-pointer"
+                    className="bg-black text-pink-600 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:text-white hover:bg-blue-600 cursor-pointer"
                   >
-                    <FaCode className="mr-1 group-hover:text-blue-500 transition-colors duration-200 ease-in-out" />
+                    <FaCode className="mr-1 group-hover:text-white transition-colors duration-200 ease-in-out" />
                     {tech}
                   </span>
                 ))}
