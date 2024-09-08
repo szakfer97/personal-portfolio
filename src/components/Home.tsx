@@ -34,7 +34,7 @@ export default function Home() {
             alt="Personal Portrait"
             className="mt-2 mb-8 w-64 lg:mx-auto border-2 border-pink-600 hover:border-blue-600 transition-colors duration-300"
           />
-          <div className="items-start flex flex-col gap-6 hover:cursor-pointer font-bold">
+          <div className="items-start flex flex-col gap-6 font-bold">
             <a
               href={githubUrl}
               target="_blank"
@@ -129,12 +129,12 @@ function Section({
       className={`bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105`}
     >
       <h2
-        className={`text-2xl font-bold mb-4 transition-colors duration-200 text-pink-600 hover:text-blue-500 cursor-pointer`}
+        className={`text-2xl font-bold mb-4 transition-colors duration-200 text-pink-600 hover:text-blue-500`}
       >
         {title}
       </h2>
       <p
-        className={`mb-6 transition-colors duration-200 cursor-pointer p-4 sm:p-6 lg:p-8 rounded-lg shadow-sm hover:shadow-lg`}
+        className={`mb-6 transition-colors duration-200 p-4 sm:p-6 lg:p-8 rounded-lg shadow-sm hover:shadow-lg`}
       >
         {description}
       </p>

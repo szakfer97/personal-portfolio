@@ -1,22 +1,18 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useTranslation } from "../utils/useTranslation";
+import { useTranslation } from "../translation/useTranslation";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { tr, changeLanguage, currentLanguage } = useTranslation();
+  const { translate, setLanguage, language } = useTranslation();
   const toggleNavbar = () => setIsOpen(!isOpen);
   const navLinks = [
-    { name: tr("NAVBAR_HOME"), path: "/" },
-    { name: tr("NAVBAR_ABOUT"), path: "/about" },
-    { name: tr("NAVBAR_PROJECTS"), path: "/projects" },
-    { name: tr("NAVBAR_SKILLS"), path: "/skills" },
-    { name: tr("NAVBAR_CERTIFICATES"), path: "/certificates" },
+    { name: translate("NAVBAR_HOME"), path: "/" },
+    { name: translate("NAVBAR_ABOUT"), path: "/about" },
+    { name: translate("NAVBAR_PROJECTS"), path: "/projects" },
+    { name: translate("NAVBAR_SKILLS"), path: "/skills" },
+    { name: translate("NAVBAR_CERTIFICATES"), path: "/certificates" },
   ];
-
-  const handleLanguageChange = (lang: string) => {
-    changeLanguage(lang.toLowerCase());
-  };
 
   return (
     <nav className="bg-gray-800 border-b-2 border-pink-600">
@@ -73,9 +69,9 @@ export default function NavBar() {
               {["EN", "HU", "RO"].map((lang) => (
                 <button
                   key={lang}
-                  onClick={() => handleLanguageChange(lang)}
+                  onClick={() => setLanguage(lang.toLowerCase())}
                   className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    currentLanguage === lang.toLowerCase()
+                    language === lang.toLowerCase()
                       ? "bg-white text-blue-500"
                       : "text-white hover:bg-white hover:text-pink-600"
                   }`}
@@ -93,7 +89,7 @@ export default function NavBar() {
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
-              <span className="sr-only">{tr("openMainMenu")}</span>
+              <span className="sr-only">{translate("openMainMenu")}</span>
               <svg
                 className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -152,11 +148,11 @@ export default function NavBar() {
                 {["EN", "HU", "RO"].map((lang) => (
                   <button
                     key={lang}
-                    onClick={() => handleLanguageChange(lang)}
-                    className={`flex-1 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
-                      currentLanguage === lang.toLowerCase()
+                    onClick={() => setLanguage(lang.toLowerCase())}
+                    className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      language === lang.toLowerCase()
                         ? "bg-white text-blue-500"
-                        : "text-gray-300 hover:bg-white hover:text-pink-600"
+                        : "text-white hover:bg-white hover:text-pink-600"
                     }`}
                   >
                     {lang}

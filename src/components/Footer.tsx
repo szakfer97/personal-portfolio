@@ -1,13 +1,16 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { useTranslation } from "../translation/useTranslation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { translate } = useTranslation();
+
   return (
     <footer className="bg-gray-800 text-transparent font-bold text-center py-4 sm:px-6 lg:px-8 border-t-2 border-pink-600">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center sm:items-start">
         <span className="text-center text-transparent bg-blue-500 hover:bg-pink-600 bg-clip-text font-bold text-sm animate-pulse">
-          Copyright &copy; {currentYear} All rights reserved.
+          Copyright &copy; {currentYear} {translate("FOOTER_COPYRIGHT")}
         </span>
         <div className="flex flex-initial sm:flex-1 justify-center sm:justify-end space-x-6 mt-2 sm:mt-0">
           <a
