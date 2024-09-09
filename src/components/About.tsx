@@ -4,8 +4,10 @@ import Footer from "./Footer";
 import PersonalPic from "../assets/personalpic.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
+import { useTranslation } from "../translation/useTranslation";
 
 export default function About() {
+  const { translate } = useTranslation();
   const skills = [
     "JavaScript",
     "HTML",
@@ -28,7 +30,7 @@ export default function About() {
       <NavBar />
       <div className="flex flex-col justify-center items-center p-10">
         <h1 className="text-5xl font-bold mb-2 hover:text-gray-800">
-          About Me
+          {translate("ABOUT_ABOUT")}
         </h1>
         <img
           src={PersonalPic}
@@ -37,12 +39,12 @@ export default function About() {
         />
         {[
           {
-            title: "Work Experience",
-            text: "As a Software Developer at DevNest and Climarol Prest, I have gained experience in diverse areas of software development for the past 2 years. I have worked on various projects, from building and maintaining web applications to improving the efficiency of existing systems.",
+            title: translate("ABOUT_WORK"),
+            text: translate("ABOUT_EXPERIENCE"),
           },
           {
-            title: "Education",
-            text: "I graduated with a Bachelor's degree in Computer Science from Universitatea din Oradea. Currently pursuing my Master's degree in Software engineering. My academic journey has taught me critical skills in problem-solving, teamwork, and adaptability.",
+            title: translate("ABOUT_EDUCATION_TITLE"),
+            text: translate("ABOUT_EDUCATION"),
           },
         ].map((section, index) => (
           <section
@@ -59,10 +61,10 @@ export default function About() {
         ))}
         <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
           <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-500">
-            Skills
+            {translate("SKILLS")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
-            Below is a list of the technologies I have used in my projects:
+            {translate("ABOUT_SKILLS_LIST")}
           </p>
           <ul className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
             {skills.map((skill, index) => (
@@ -72,76 +74,71 @@ export default function About() {
             ))}
           </ul>
           <p className="my-4 text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
-            For more detailed information on my acquired skills, you can check
-            out the{" "}
+            {translate("ABOUT_SKILLS_LINK1")}
             <Link
               to="/skills"
               className="text-pink-600 hover:text-blue-600"
               style={{ textDecoration: "underline" }}
             >
-              Skills
+              {translate("SKILLS")}
             </Link>{" "}
-            section of this website.
+            {translate("ABOUT_SKILLS_LINK2")}
           </p>
         </div>
         <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
           <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
-            Projects
+            {translate("PROJECTS")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
-            Some of my projects were quite challenging. For more detailed
-            information, you can check out the{" "}
+            {translate("ABOUT_PROJECTS_LINK1")}
             <Link
               to="/projects"
               className="text-pink-600 hover:text-blue-600"
               style={{ textDecoration: "underline" }}
             >
-              Projects
+              {translate("PROJECTS")}
             </Link>{" "}
-            section of this website.
+            {translate("ABOUT_PROJECTS_LINK2")}
           </p>
         </div>
         <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
           <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
-            Certificates
+            {translate("CERTIFICATES")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
-            I am certified in Advanced English by the University of Cambridge
-            and in different programming languages and technologies by
-            SoloLearn. For more detailed information, you can check out the{" "}
+            {translate("ABOUT_CERTIFICATES_LINK1")}
             <Link
               to="/certificates"
               className="text-pink-600 hover:text-blue-600"
               style={{ textDecoration: "underline" }}
             >
-              Certificates
+              {translate("CERTIFICATES")}
             </Link>{" "}
-            section of this website.
+            {translate("ABOUT_CERTIFICATES_LINK2")}
           </p>
         </div>
         <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
           <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
-            Hobbies
+            {translate("ABOUT_HOBBIES")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
-            In my free time, I enjoy playing sports, reading books, playing
-            video games and coding side projects in my spare time.
+            {translate("HOBBIES")}
           </p>
         </div>
         <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
-          Getting interested?
+          {translate("ABOUT_INTEREST")}
         </p>
         <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
-          Click the buttons below to download my CV and cover letter.
+          {translate("ABOUT_INTEREST_DOWNLOAD")}
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
           <button className="my-4 bg-black text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
-            Download CV
+            {translate("CV_DOWNLOAD")}
           </button>
         </Link>
         <Link to={CoverFile} download target="_blank" rel="noreferrer">
           <button className="my-2 bg-black text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
-            Download Cover Letter
+            {translate("COVER_LETTER_DOWNLOAD")}
           </button>
         </Link>
       </div>

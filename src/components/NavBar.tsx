@@ -7,11 +7,11 @@ export default function NavBar() {
   const { translate, setLanguage, language } = useTranslation();
   const toggleNavbar = () => setIsOpen(!isOpen);
   const navLinks = [
-    { name: translate("NAVBAR_HOME"), path: "/" },
-    { name: translate("NAVBAR_ABOUT"), path: "/about" },
-    { name: translate("NAVBAR_PROJECTS"), path: "/projects" },
-    { name: translate("NAVBAR_SKILLS"), path: "/skills" },
-    { name: translate("NAVBAR_CERTIFICATES"), path: "/certificates" },
+    { name: translate("HOME"), path: "/" },
+    { name: translate("ABOUT"), path: "/about" },
+    { name: translate("PROJECTS"), path: "/projects" },
+    { name: translate("SKILLS"), path: "/skills" },
+    { name: translate("CERTIFICATES"), path: "/certificates" },
   ];
 
   return (
