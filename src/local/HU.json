@@ -29,5 +29,22 @@
   "ABOUT_CERTIFICATES_LINK2": " oldalat.",
   "ABOUT_INTEREST": "Kezdi érdekelni?",
   "ABOUT_INTEREST_DOWNLOAD": "Ebben az esetben lépjünk kapcsolatba!",
-  "FOOTER_COPYRIGHT": "Minden jog fenntartva."
+  "PROJECTS_TEXT1": "Íme néhány a projektek közül, amelyeken dolgoztam.",
+  "PROJECTS_TEXT2": "Minden kártya tartalmazza a projekt nevét, leírását és a használt technológiákat.",
+  "PROJECTS_TEXT3": "A nevükre kattintva átirányít a megfelelő GitHub repoba.",
+  "PROJECTS_DESCRIPTION1": "A TypeScript, React és Tailwind CSS segítségével készült személyes portfólió weboldalam.",
+  "PROJECTS_DESCRIPTION2": "MERN stack segítségével épített kazánkezelő alkalmazás.",
+  "PROJECTS_DESCRIPTION3": "Labdarúgó adatok vizualizációja Python nyelvvel írva.",
+  "PROJECTS_DESCRIPTION4": "Vite, Svelte és TypeScript segítségével készült Tic-tac-toe játék.",
+  "PROJECTS_DESCRIPTION5": "Vite, Vue és TypeScript segítségével írt kalóriakövető.",
+  "PROJECTS_DESCRIPTION6": "JavaScript, HTML és CSS nyelven írt kvízjáték.",
+  "PROJECTS_DESCRIPTION7": "Python alkalmazások, amelyek saját maguk által választott formákat rajzolnak.",
+  "PROJECTS_DESCRIPTION8": "C# alkalmazás, amely a rendezési algoritmusok teljesítményét hasonlítja össze.",
+  "PROJECTS_DESCRIPTION9": "Kódolási feladatok Java nyelven.",
+  "PROJECTS_DESCRIPTION10": "Feladatok, amelyeket az egyetemi éveim alatt végeztem.",
+  "SKILLS_TEXT1": "Különböző projekteken dolgoztam, az alkalmazások építésétől és karbantartásától kezdve a meglévő rendszerek hatékonyságának javításáig.",
+  "SKILLS_TEXT2": "Az alábbiakban azokat a technológiákat ismertetem, amelyekkel volt szerencsém együtt dolgozni az iparágban eltöltött időm alatt.",
+  "SKILLS_TEXT3": "Kattintson az ikonokra, ha többet szeretne megtudni a velük kapcsolatos tapasztalataimról.",
+  "FOOTER_COPYRIGHT1": "Szerzői jogok",
+  "FOOTER_COPYRIGHT2": "Minden jog fenntartva."
 }

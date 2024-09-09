@@ -2,19 +2,20 @@ import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import { useTranslation } from "../translation/useTranslation";
 
 export default function Projects() {
+  const { translate } = useTranslation();
   const projects = [
     {
       name: "Personal portfolio",
-      description:
-        "My personal portfolio website built with TypeScript, React and Tailwind CSS.",
+      description: translate("PROJECTS_DESCRIPTION1"),
       link: "https://github.com/szakfer97/personal-portfolio",
       techStack: ["TypeScript", "React", "Tailwind CSS"],
     },
     {
       name: "Boiler management app",
-      description: "Boiler management app with MERN stack.",
+      description: translate("PROJECTS_DESCRIPTION2"),
       link: "https://github.com/szakfer97/boiler-management-app",
       techStack: [
         "TypeScript",
@@ -27,50 +28,49 @@ export default function Projects() {
     },
     {
       name: "Football data visualization",
-      description: "Football data visualization in Python.",
+      description: translate("PROJECTS_DESCRIPTION3"),
       link: "https://github.com/szakfer97/Football-Data-Viz",
       techStack: ["Python"],
     },
     {
       name: "Tic tac toe",
-      description: "Tic-tac-toe game built with Vite, Svelte and TypeScript",
+      description: translate("PROJECTS_DESCRIPTION4"),
       link: "https://github.com/szakfer97/tic-tac-toe",
       techStack: ["Vite", "Svelte", "TypeScript", "JavaScript", "HTML", "CSS"],
     },
     {
       name: "Workout tracker",
-      description:
-        "Tracks the calories burned during a workout. Written Vite, Vue and TypeScript.",
+      description: translate("PROJECTS_DESCRIPTION5"),
       link: "https://github.com/szakfer97/workout-tracker",
       techStack: ["Vite", "Vue", "TypeScript", "JavaScript", "HTML", "CSS"],
     },
     {
       name: "Quiz show",
-      description: "Quiz show game written in JavaScript, HTML, and CSS.",
+      description: translate("PROJECTS_DESCRIPTION6"),
       link: "https://github.com/szakfer97/quiz-show",
       techStack: ["JavaScript", "HTML", "CSS"],
     },
     {
       name: "Random shapes drawing app",
-      description: "Python apps that draw shapes of their own choosing.",
+      description: translate("PROJECTS_DESCRIPTION7"),
       link: "https://github.com/szakfer97/Random-Shapes-Drawer",
       techStack: ["Python"],
     },
     {
       name: "Sorting algorithm performance comparison",
-      description: "C# app comparing sort algorithm performances.",
+      description: translate("PROJECTS_DESCRIPTION8"),
       link: "https://github.com/szakfer97/SortAlgoComparison",
       techStack: ["C#"],
     },
     {
       name: "Code challenges",
-      description: "Code challenges in Java.",
+      description: translate("PROJECTS_DESCRIPTION9"),
       link: "https://github.com/szakfer97/CodeChallenges",
       techStack: ["Java"],
     },
     {
       name: "University coding tasks",
-      description: "Tasks I did during my uni years.",
+      description: translate("PROJECTS_DESCRIPTION10"),
       link: "https://github.com/szakfer97/UniversityTasks",
       techStack: ["C#", "Python"],
     },
@@ -81,18 +81,16 @@ export default function Projects() {
       <NavBar />
       <div className="flex flex-col items-center justify-center p-4 lg:p-8">
         <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out hover:text-gray-800">
-          Projects
+          {translate("PROJECTS")}
         </h1>
         <p className="mt-4 text-lg hover:text-gray-800">
-          Here are some of the projects I have worked on.
+          {translate("PROJECTS_TEXT1")}
         </p>
         <p className="mt-4 text-lg hover:text-gray-800">
-          Each card contains the project's name, description and the
-          technologies used.
+          {translate("PROJECTS_TEXT2")}
         </p>
         <p className="mt-4 text-lg hover:text-gray-800">
-          Clicking on their name will redirect you to their respective GitHub
-          repository.
+          {translate("PROJECTS_TEXT3")}
         </p>
         <div className="mt-8 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-3">
           {projects.map((project) => (

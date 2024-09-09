@@ -1,3 +1,4 @@
+import { SetStateAction, useState } from "react";
 import {
   FaFigma,
   FaGit,
@@ -19,12 +20,11 @@ import {
 } from "react-icons/si";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-
-import { SetStateAction, useState } from "react";
-
+import { useTranslation } from "../translation/useTranslation";
 export default function Skills() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentTech, setCurrentTech] = useState({ name: "", description: "" });
+  const { translate } = useTranslation();
 
   const icons = [
     {
@@ -133,26 +133,22 @@ export default function Skills() {
       <NavBar />
       <div className="flex items-center justify-center mt-8 mb-4">
         <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
-          Skills
+          {translate("SKILLS")}
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
         <p className="px-4 text-lg font-medium lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
-          I have worked on various projects, from building and maintaining
-          full-stack applications to improving the efficiency of existing
-          systems.
+          {translate("SKILLS_TEXT1")}
         </p>
       </div>
       <div className="flex items-center justify-center my-2">
         <p className="px-4 text-lg font-medium lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
-          Below are the technologies I had the pleasure of working with during
-          my time in the industry.
+          {translate("SKILLS_TEXT2")}
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
         <p className="px-4 text-base font-medium lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
-          Click on the icons to learn more about my experience with each one of
-          them.
+          {translate("SKILLS_TEXT3")}
         </p>
       </div>
       <div className="grid gap-4 md:grid-cols-3 grid-cols-2 place-items-center">

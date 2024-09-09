@@ -29,5 +29,22 @@
   "ABOUT_CERTIFICATES_LINK2": " section of the site.",
   "ABOUT_INTEREST": "Getting interested?",
   "ABOUT_INTEREST_DOWNLOAD": "In that case, let's get in touch!",
-  "FOOTER_COPYRIGHT": "All rights reserved."
+  "PROJECTS_TEXT1": "Here are some of the projects I have worked on.",
+  "PROJECTS_TEXT2": "Each card contains the project's name, description and the technologies used.",
+  "PROJECTS_TEXT3": "Clicking on their name will redirect you to their respective GitHub repository.",
+  "PROJECTS_DESCRIPTION1": "My personal portfolio website built with TypeScript, React and Tailwind CSS.",
+  "PROJECTS_DESCRIPTION2": "Boiler management app built with MERN stack.",
+  "PROJECTS_DESCRIPTION3": "Football data visualization written in Python.",
+  "PROJECTS_DESCRIPTION4": "Tic-tac-toe game built with Vite, Svelte and TypeScript.",
+  "PROJECTS_DESCRIPTION5": "Burned calories tracker written with Vite, Vue and TypeScript.",
+  "PROJECTS_DESCRIPTION6": "Quiz show game written in JavaScript, HTML, and CSS.",
+  "PROJECTS_DESCRIPTION7": "Python apps that draw shapes of their own choosing.",
+  "PROJECTS_DESCRIPTION8": "C# app comparing the performance of sorting algorithms.",
+  "PROJECTS_DESCRIPTION9": "Code challenges in Java.",
+  "PROJECTS_DESCRIPTION10": "Tasks I did during my university years.",
+  "SKILLS_TEXT1": "I have worked on various projects, from building and maintaining full-stack applications to improving the efficiency of existing systems.",
+  "SKILLS_TEXT2": "Below are the technologies I had the pleasure of working with during my time in the industry.",
+  "SKILLS_TEXT3": "Click on the icons to learn more about my experience with each one of them.",
+  "FOOTER_COPYRIGHT1": "Copyright",
+  "FOOTER_COPYRIGHT2": "All rights reserved."
 }
