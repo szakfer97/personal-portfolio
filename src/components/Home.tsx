@@ -10,23 +10,20 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 import PersonalPortrait from "../assets/personalportrait.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
+import { useTranslation } from "../translation/useTranslation";
+import ContactData from "../local/CONTACT.json";
 
 export default function Home() {
-  const email = "szakfer97@gmail.com";
-  const phoneNumber = "0771405782";
-  const gitHub = "szakfer97";
-  const linkedIn = "Szakacsi Ferenc-Adam";
-  const linkedInUrl = "https://www.linkedin.com/in/szakacsi-ferenc-adam/";
-  const githubUrl = "https://github.com/szakfer97";
+  const { translate } = useTranslation();
   return (
     <div>
       <NavBar />
       <div className="container mx-auto flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 mt-8 sm:mt-16 lg:mt-20">
         <h1 className="text-4xl font-bold my-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
-          Hello, I'm Szakacsi Ferenc-Adam!
+          {translate("HOME_HELLO")}
         </h1>
         <p className="text-lg mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
-          Welcome to my personal website.
+          {translate("HOME_WELCOME")}
         </p>
         <div className="w-full max-w-4xl mx-auto grid gap-8 grid-cols-2 items-center mt-8 lg:mt-10">
           <img
@@ -36,32 +33,32 @@ export default function Home() {
           />
           <div className="items-start flex flex-col gap-6 font-bold">
             <a
-              href={githubUrl}
+              href={ContactData.GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <FaGithub className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {gitHub}
+              {translate("HOME_GITHUB")}
             </a>
             <a
-              href={linkedInUrl}
+              href={ContactData.LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <FaLinkedin className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {linkedIn}
+              {translate("HOME_LINKEDIN")}
             </a>
             <div className="flex items-center hover:text-gray-800 hover:scale-105 transition-colors duration-200">
               <FaPhoneSquareAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
                   e.preventDefault();
-                  navigator.clipboard.writeText(phoneNumber);
+                  navigator.clipboard.writeText(ContactData.PHONE);
                 }}
               >
-                {phoneNumber}
+                {ContactData.PHONE}
               </button>
             </div>
             <a
@@ -70,8 +67,8 @@ export default function Home() {
               rel="noreferrer"
               className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
-              <AiOutlineMail className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {email}
+              <AiOutlineMail className="h-6 w-6 md:mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
+              {ContactData.EMAIL}
             </a>
             <Link
               to={CVFile}
@@ -81,35 +78,27 @@ export default function Home() {
               className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              Download my CV
+              {translate("CV_DOWNLOAD")}
             </Link>
           </div>
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
-          <Section
-            title="About me"
-            description="Dedicated and enthusiastic software developer with a deep passion for continuous selfimprovement. My professional journey is driven by a desire to excel in both soft and hard skills while
-            fostering productive collaborations with colleagues. I firmly believe that great software
-            development extends beyond code; it's about teamwork, communication, and adaptability."
-          />
+          <Section title="About me" description={translate("HOME_ABOUT")} />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="Experience"
-            description="I have worked in various roles, from full-stack JavaScript developer to software developer. I have experience in developing web applications, mobile applications, and desktop applications."
+            description={translate("HOME_EXPERIENCE")}
           />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title="Education"
-            description="I have a background in computer science and hold a bachelor's degree from Universiatea din Oradea. Currently doing my master's degree in computer software engineering."
+            description={translate("HOME_EDUCATION")}
           />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
-          <Section
-            title="Hobbies"
-            description="In my free time, I enjoy playing sports, reading books, playing video games, watching TV shows and coding side projects."
-          />
+          <Section title="Hobbies" description={translate("HOME_HOBBIES")} />
         </div>
       </div>
       <Footer />

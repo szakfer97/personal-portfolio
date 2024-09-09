@@ -4,5 +4,15 @@
   "NAVBAR_PROJECTS": "Projects",
   "NAVBAR_SKILLS": "Skills",
   "NAVBAR_CERTIFICATES": "Certificates",
+  "CV_DOWNLOAD": "Download my CV",
+  "COVER_LETTER_DOWNLOAD": "Download my Cover letter",
+  "HOME_GITHUB": "GitHub account",
+  "HOME_LINKEDIN": "LinkedIn account",
+  "HOME_HELLO": "Hello! I'm Szakacsi Ferenc-Adam.",
+  "HOME_WELCOME": "Welcome to my personal website.",
+  "HOME_ABOUT": "Dedicated and enthusiastic software developer with a deep passion for continuous selfimprovement. My professional journey is driven by a desire to excel in both soft and hard skills while fostering productive collaborations with colleagues. I firmly believe that great software development extends beyond code; it's about teamwork, communication, and adaptability.",
+  "HOME_EXPERIENCE": "I worked as a full stack software developer for almost 2 years. I have experience in developing web applications, mobile applications and desktop applications.",
+  "HOME_EDUCATION": "I have a background in computer science and hold a bachelor's degree from Universiatea din Oradea. Currently doing my master's degree in computer software engineering.",
+  "HOME_HOBBIES": "In my free time, I enjoy playing sports, reading books, playing video games, watching TV shows and coding side projects.",
   "FOOTER_COPYRIGHT": "All rights reserved."
 }
