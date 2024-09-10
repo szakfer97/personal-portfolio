@@ -15,7 +15,7 @@ export default function Footer() {
         </span>
         <div className="flex flex-initial sm:flex-1 justify-center sm:justify-end space-x-6 mt-2 sm:mt-0">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
+            href="mailto:szakfer97@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-600 hover:text-blue-600 flex items-center drop-shadow-[0_0_0.3rem_#fff5]"

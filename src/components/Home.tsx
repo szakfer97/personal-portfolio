@@ -62,7 +62,7 @@ export default function Home() {
               </button>
             </div>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=szakfer97@gmail.com"
+              href="mailto:szakfer97@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
