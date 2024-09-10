@@ -38,7 +38,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
             >
-              <FaGithub className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
+              <FaGithub className="h-8 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("HOME_GITHUB")}
             </a>
             <a
@@ -83,17 +83,20 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
-          <Section title="About me" description={translate("HOME_ABOUT")} />
+          <Section
+            title={translate("ABOUT_ABOUT")}
+            description={translate("HOME_ABOUT")}
+          />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
-            title="Experience"
+            title={translate("ABOUT_WORK")}
             description={translate("HOME_EXPERIENCE")}
           />
         </div>
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
-            title="Education"
+            title={translate("ABOUT_EDUCATION_TITLE")}
             description={translate("HOME_EDUCATION")}
           />
         </div>
@@ -115,7 +118,7 @@ function Section({
       className={`bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105`}
     >
       <h2
-        className={`text-2xl font-bold mb-4 transition-colors duration-200 text-pink-600 hover:text-blue-500`}
+        className={`text-2xl font-bold mb-4 transition-colors px-4 sm:px-6 lg:px-8 duration-200 text-pink-600 hover:text-blue-500`}
       >
         {title}
       </h2>

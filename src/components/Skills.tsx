@@ -15,7 +15,9 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiMongodb,
+  SiPostgresql,
   SiExpress,
+  SiCanva,
   SiJest,
 } from "react-icons/si";
 import NavBar from "./NavBar";
@@ -30,90 +32,87 @@ export default function Skills() {
     {
       Icon: FaJs,
       name: "JavaScript",
-      description:
-        "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification.",
+      description: translate("SKILLS_JS"),
     },
     {
       Icon: FaHtml5,
       name: "HTML",
-      description: "HTML stands for HyperText Markup Language.",
+      description: translate("SKILLS_HTML"),
     },
     {
       Icon: FaCss3,
       name: "CSS",
-      description:
-        "Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in HTML.",
+      description: translate("SKILLS_CSS"),
     },
     {
       Icon: SiTypescript,
       name: "TypeScript",
-      description:
-        "TypeScript is a superset of JavaScript that adds static types to the language.",
+      description: translate("SKILLS_TS"),
     },
     {
       Icon: FaReact,
       name: "React",
-      description:
-        "React is an open-source, front-end JavaScript library for building user interfaces.",
+      description: translate("SKILLS_REACT"),
     },
     {
       Icon: SiTailwindcss,
       name: "Tailwind CSS",
-      description:
-        "Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs.",
+      description: translate("SKILLS_TAILWIND"),
     },
     {
       Icon: FaNodeJs,
       name: "Node.js",
-      description:
-        "Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a browser.",
+      description: translate("SKILLS_NODE"),
     },
     {
       Icon: SiExpress,
       name: "Express",
-      description:
-        "Express.js, or simply Express, is a minimal and flexible Node.js web application framework.",
+      description: translate("SKILLS_EXPRESS"),
     },
     {
       Icon: SiMongodb,
       name: "MongoDB",
-      description:
-        "MongoDB is a source-available cross-platform document-oriented database program.",
+      description: translate("SKILLS_MONGO"),
+    },
+    {
+      Icon: SiPostgresql,
+      name: "PostgreSQL",
+      description: translate("SKILLS_POSTGRE"),
     },
     {
       Icon: SiJest,
       name: "Jest",
-      description:
-        "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.",
+      description: translate("SKILLS_JEST"),
     },
     {
       Icon: FaJira,
       name: "Jira",
-      description:
-        "Jira is a software development tool by Atlassian that combines an issue tracking system, Kanban process workflow management tool, and project management functionality.",
+      description: translate("SKILLS_JIRA"),
     },
     {
       Icon: FaFigma,
       name: "Figma",
-      description:
-        "Figma is a collaborative design and prototyping tool that allows you to create, share, and collaborate on designs.",
+      description: translate("SKILLS_FIGMA"),
+    },
+    {
+      Icon: SiCanva,
+      name: "Canva",
+      description: translate("SKILLS_CANVA"),
     },
     {
       Icon: FaGit,
       name: "Git",
-      description:
-        "Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+      description: translate("SKILLS_GIT"),
     },
     {
       Icon: FaGithub,
       name: "GitHub",
-      description: "GitHub is a web-based Git repository hosting service.",
+      description: translate("SKILLS_GITHUB"),
     },
     {
       Icon: FaGitlab,
       name: "GitLab",
-      description:
-        "GitLab is a web-based DevOps lifecycle tool that provides version control and CI/CD pipeline features.",
+      description: translate("SKILLS_GITLAB"),
     },
   ];
 
@@ -147,7 +146,7 @@ export default function Skills() {
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="px-4 text-base font-medium lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-medium lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
           {translate("SKILLS_TEXT3")}
         </p>
       </div>
@@ -163,7 +162,7 @@ export default function Skills() {
               className={`mb-4 transition-transform transform-gpu`}
             />
             <p
-              className={`text-center text-sm mt-2 mb-4 italic underline-offset-8 underline uppercase transition-opacity group-hover:opacity-100`}
+              className={`text-center text-sm mt-2 mb-4 italic font-bold uppercase transition-opacity group-hover:opacity-100`}
             >
               {name}
             </p>
@@ -176,17 +175,15 @@ export default function Skills() {
           onClick={closeModal}
         >
           <div
-            className="bg-white p-8 rounded-lg shadow-lg"
+            className="bg-gradient-to-r from-blue-500 to-pink-600 p-8 rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="mt-8 flex items-center justify-center">
-              <h2 className="text-3xl font-bold text-gray-800 hover:text-blue-500">
+            <div className="mt-4 flex items-center justify-center">
+              <h2 className="text-3xl font-bold hover:text-blue-600">
                 {currentTech.name}
               </h2>
             </div>
-            <p className="mt-4 text-gray-800 hover:text-blue-500">
-              {currentTech.description}
-            </p>
+            <p className="mt-4">{currentTech.description}</p>
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}

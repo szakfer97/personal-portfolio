@@ -1,57 +1,53 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import { useTranslation } from "../translation/useTranslation";
 
 export default function Certificates() {
+  const { translate } = useTranslation();
   const certificates = [
     {
-      name: "Cambridge Advanced English Certificate",
-      description:
-        "Certificate awarded upon successful completion of the Cambridge advanced English course.",
+      name: translate("CERTIFICATES_CAE_TITLE"),
+      description: translate("CERTIFICATES_CAE"),
     },
     {
-      name: "Teaching Module Diploma",
-      description:
-        "Certificate awarded upon successful completion of the teaching module.",
+      name: translate("CERTIFICATES_MOD_TITLE"),
+      description: translate("CERTIFICATES_MOD"),
     },
     {
-      name: "Collegium Varadinum Scientific Student Conference Commendation",
-      description:
-        "Commendation awarded upon succesful presentation of the conducted research in the subject of AI and its effects on society.",
+      name: translate("CERTIFICATES_COM_TITLE"),
+      description: translate("CERTIFICATES_COM"),
     },
     {
-      name: "SoloLearn ReactJS Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn ReactJS course.",
+      name: translate("CERTIFICATES_SOL1_TITLE"),
+      description: translate("CERTIFICATES_SOL1"),
     },
     {
-      name: "SoloLearn JavaScript Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn JavaScript course.",
+      name: translate("CERTIFICATES_SOL2_TITLE"),
+      description: translate("CERTIFICATES_SOL2"),
     },
     {
-      name: "SoloLearn HTML Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn HTML course.",
+      name: translate("CERTIFICATES_SOL3_TITLE"),
+      description: translate("CERTIFICATES_SOL3"),
     },
     {
-      name: "SoloLearn CSS Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn CSS course.",
+      name: translate("CERTIFICATES_SOL4_TITLE"),
+      description: translate("CERTIFICATES_SOL4"),
     },
     {
-      name: "SoloLearn C# Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn C# course.",
+      name: translate("CERTIFICATES_SOL5_TITLE"),
+      description: translate("CERTIFICATES_SOL5"),
     },
     {
-      name: "SoloLearn Python Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn Python course.",
+      name: translate("CERTIFICATES_SOL6_TITLE"),
+      description: translate("CERTIFICATES_SOL6"),
     },
     {
-      name: "SoloLearn Java Certificate",
-      description:
-        "Certificate awarded upon successful completion of the SoloLearn Java course.",
+      name: translate("CERTIFICATES_SOL7_TITLE"),
+      description: translate("CERTIFICATES_SOL7"),
+    },
+    {
+      name: translate("CERTIFICATES_SOL8_TITLE"),
+      description: translate("CERTIFICATES_SOL8"),
     },
   ];
   return (
@@ -59,7 +55,7 @@ export default function Certificates() {
       <NavBar />
       <div className="flex flex-col items-center justify-center px-8 py-6 md:px-16 md:py-8 lg:px-24 transition-transform duration-300">
         <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
-          Certificates
+          {translate("CERTIFICATES")}
         </h1>
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {certificates.map((certificate) => (
