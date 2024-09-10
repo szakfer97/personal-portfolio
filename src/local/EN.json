@@ -62,6 +62,7 @@
   "SKILLS_GIT": "Git is a version control system that tracks changes in code, enabling collaboration and version management. I used it in all my software projects to manage version control, collaborate with other developers, and track changes over time.",
   "SKILLS_GITHUB": "GitHub is a platform for hosting Git repositories, facilitating code sharing, collaboration, and project management. I used it to share code, manage pull requests, and collaborate on both open-source and private team projects.",
   "SKILLS_GITLAB": "GitLab is an alternative to GitHub, offering Git repository hosting with integrated CI/CD pipelines and project management features. I used it in DevOps-focused projects where continuous integration and delivery (CI/CD) were important for automation and deployment.",
+  "SKILLS_BUTTON": "Close",
   "CERTIFICATES_CAE_TITLE": "Cambridge Advanced English Certificate",
   "CERTIFICATES_MOD_TITLE": "Teaching Module Diploma",
   "CERTIFICATES_COM_TITLE": "Collegium Varadinum Scientific Student Conference Commendation",

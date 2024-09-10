@@ -189,7 +189,9 @@ export default function Skills() {
                 onClick={closeModal}
                 className="px-8 py-3 bg-blue-500 rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
               >
-                <span className="text-xl font-bold">Close</span>
+                <span className="text-xl font-bold">
+                  {translate("SKILLS_BUTTON")}
+                </span>
               </button>
             </div>
           </div>
