@@ -136,17 +136,17 @@ export default function Skills() {
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="px-4 text-lg font-medium lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-medium transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
           {translate("SKILLS_TEXT1")}
         </p>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="px-4 text-lg font-medium lg:text-xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-medium transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
           {translate("SKILLS_TEXT2")}
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="px-4 text-lg font-medium lg:text-lg transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-medium transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
           {translate("SKILLS_TEXT3")}
         </p>
       </div>

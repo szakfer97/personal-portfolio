@@ -83,13 +83,13 @@ export default function Projects() {
         <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out hover:text-gray-800">
           {translate("PROJECTS")}
         </h1>
-        <p className="mt-4 text-lg hover:text-gray-800">
+        <p className="mt-4 text-lg font-bold hover:text-gray-800">
           {translate("PROJECTS_TEXT1")}
         </p>
-        <p className="mt-4 text-lg hover:text-gray-800">
+        <p className="mt-4 text-lg font-bold hover:text-gray-800">
           {translate("PROJECTS_TEXT2")}
         </p>
-        <p className="mt-4 text-lg hover:text-gray-800">
+        <p className="mt-4 text-lg font-bold hover:text-gray-800">
           {translate("PROJECTS_TEXT3")}
         </p>
         <div className="mt-8 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-3">

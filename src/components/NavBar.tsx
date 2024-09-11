@@ -130,7 +130,7 @@ export default function NavBar() {
                 <NavLink
                   key={path}
                   to={path}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="block px-3 py-2 rounded-md text-center font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                   style={({ isActive }) =>
                     isActive
                       ? {
@@ -149,7 +149,7 @@ export default function NavBar() {
                   <button
                     key={lang}
                     onClick={() => setLanguage(lang.toLowerCase())}
-                    className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
+                    className={`px-3 py-1 rounded-md text-sm font-bold transition-colors duration-200 ${
                       language === lang.toLowerCase()
                         ? "bg-white text-blue-500"
                         : "text-white hover:bg-white hover:text-pink-600"
