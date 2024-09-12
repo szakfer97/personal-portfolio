@@ -63,6 +63,7 @@
   "SKILLS_GITHUB": "A GitHub egy platform a Git tárolók hosztolására, amely lehetővé teszi a kód megosztását, az együttműködést és a projektmenedzsmentet. Kódmegosztásra, pull requestek kezelésére és nyílt forráskódú és privát csapatprojektekben való együttműködésre használtam.",
   "SKILLS_GITLAB": "A GitLab egy alternatíva a GitHub-hoz, amely Git tároló hosztolást kínál beépített CI/CD folyamatokkal és projektmenedzsment funkciókkal. CI/CD-t igénylő DevOps-fókuszú projektekben használtam, ahol fontos volt az automatizálás és a telepítés.",
   "SKILLS_BUTTON": "Bezárni",
+  "CERTIFICATES_TEXT": "Az alábbiakban felsorolom az eddig megszerzett tanúsítványaimat akadémiai pályafutásom során.",
   "CERTIFICATES_CAE_TITLE": "Cambridge Advanced English Tanúsítvány",
   "CERTIFICATES_MOD_TITLE": "Tanári Modul Diploma",
   "CERTIFICATES_COM_TITLE": "Collegium Varadinum Tudományos Diákkonferencia Dicséret",

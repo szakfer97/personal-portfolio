@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { TranslationProvider } from "./translation/useTranslationProvider";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
@@ -20,11 +22,13 @@ export default function App() {
     <BrowserRouter>
       <TranslationProvider>
         <Suspense fallback={<div>Loading...</div>}>
+          <NavBar />
           <Routes>
             {routes.map(({ path, element }) => (
               <Route key={path} path={path} element={element} />
             ))}
           </Routes>
+          <Footer />
         </Suspense>
       </TranslationProvider>
     </BrowserRouter>

@@ -20,8 +20,6 @@ import {
   SiCanva,
   SiJest,
 } from "react-icons/si";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import { useTranslation } from "../translation/useTranslation";
 export default function Skills() {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,7 +127,6 @@ export default function Skills() {
 
   return (
     <div>
-      <NavBar />
       <div className="flex items-center justify-center mt-8 mb-4">
         <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
           {translate("SKILLS")}
@@ -197,7 +194,6 @@ export default function Skills() {
           </div>
         </div>
       )}
-      <Footer />
     </div>
   );
 }

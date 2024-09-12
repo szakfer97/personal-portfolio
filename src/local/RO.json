@@ -63,6 +63,7 @@
   "SKILLS_GITHUB": "GitHub este o platformă pentru găzduirea depozitelor Git, facilitând partajarea codului, colaborarea și managementul proiectelor. L-am folosit pentru a partaja codul, a gestiona pull request-urile și a colabora în proiecte open-source sau private de echipă.",
   "SKILLS_GITLAB": "GitLab este o alternativă la GitHub, oferind găzduire pentru depozite Git cu pipeline-uri CI/CD integrate și funcții de management al proiectelor. L-am folosit în proiecte axate pe DevOps, unde integrarea continuă și livrarea continuă (CI/CD) au fost importante pentru automatizare și implementare.",
   "SKILLS_BUTTON": "Închide",
+  "CERTIFICATES_TEXT": "Mai jos sunt certificatele obținute până acum în cariera mea academică.",
   "CERTIFICATES_CAE_TITLE": "Certificat Cambridge Advanced English",
   "CERTIFICATES_MOD_TITLE": "Diplomă Modul de Predare",
   "CERTIFICATES_COM_TITLE": "Mențiune Conferința Științifică Studențească Collegium Varadinum",

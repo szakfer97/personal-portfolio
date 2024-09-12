@@ -1,7 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import { useTranslation } from "../translation/useTranslation";
 
 export default function Projects() {
@@ -78,7 +76,6 @@ export default function Projects() {
 
   return (
     <div>
-      <NavBar />
       <div className="flex flex-col items-center justify-center p-4 lg:p-8">
         <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out hover:text-gray-800">
           {translate("PROJECTS")}
@@ -122,7 +119,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import PersonalPic from "../assets/personalpic.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
@@ -27,7 +25,6 @@ export default function About() {
   ];
   return (
     <div className="h-screen flex flex-col justify-between">
-      <NavBar />
       <div className="flex flex-col justify-center items-center p-10">
         <h1 className="text-5xl font-bold mb-2 hover:text-gray-800">
           {translate("ABOUT_ABOUT")}
@@ -142,7 +139,6 @@ export default function About() {
           </button>
         </Link>
       </div>
-      <Footer />
     </div>
   );
 }

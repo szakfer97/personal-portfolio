@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import {
   FaPhoneSquareAlt,
   FaRegFilePdf,
@@ -17,7 +15,6 @@ export default function Home() {
   const { translate } = useTranslation();
   return (
     <div>
-      <NavBar />
       <div className="container mx-auto flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 mt-8 sm:mt-16 lg:mt-20">
         <h1 className="text-4xl font-bold my-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           {translate("HOME_HELLO")}
@@ -101,7 +98,6 @@ export default function Home() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
