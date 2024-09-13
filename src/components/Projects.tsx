@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { useTranslation } from "../translation/useTranslation";
+import Footer from "./Footer";
 
 export default function Projects() {
   const { translate } = useTranslation();
@@ -119,6 +120,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

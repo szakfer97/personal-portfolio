@@ -3,6 +3,7 @@ import PersonalPic from "../assets/personalpic.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
+import Footer from "./Footer";
 
 export default function About() {
   const { translate } = useTranslation();
@@ -139,6 +140,7 @@ export default function About() {
           </button>
         </Link>
       </div>
+      <Footer />
     </div>
   );
 }

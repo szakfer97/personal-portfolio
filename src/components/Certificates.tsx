@@ -1,4 +1,5 @@
 import { useTranslation } from "../translation/useTranslation";
+import Footer from "./Footer";
 
 export default function Certificates() {
   const { translate } = useTranslation();
@@ -55,7 +56,7 @@ export default function Certificates() {
           {translate("CERTIFICATES")}
         </h1>
         <div className="flex items-center justify-center mt-4 mb-2">
-          <p className="px-4 text-lg font-medium transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+          <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
             {translate("CERTIFICATES_TEXT")}
           </p>
         </div>
@@ -73,6 +74,7 @@ export default function Certificates() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

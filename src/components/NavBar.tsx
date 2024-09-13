@@ -125,7 +125,7 @@ export default function NavBar() {
         </div>
         {isOpen && (
           <div className="md:hidden" id="mobile-menu">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 animate-pulse">
               {navLinks.map(({ name, path }) => (
                 <NavLink
                   key={path}

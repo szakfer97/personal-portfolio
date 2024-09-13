@@ -10,6 +10,7 @@ import PersonalPortrait from "../assets/personalportrait.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
 import ContactData from "../local/CONTACT.json";
+import Footer from "./Footer";
 
 export default function Home() {
   const { translate } = useTranslation();
@@ -19,7 +20,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold my-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           {translate("HOME_HELLO")}
         </h1>
-        <p className="text-lg font-bold mb-8 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
+        <p className="text-lg font-bold mb-4 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           {translate("HOME_WELCOME")}
         </p>
         <div className="w-full max-w-4xl mx-auto grid gap-8 grid-cols-2 items-center mt-8 lg:mt-10">
@@ -98,6 +99,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
