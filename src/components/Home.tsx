@@ -8,6 +8,7 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 import PersonalPortrait from "../assets/personalportrait.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
+import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
 import ContactData from "../local/CONTACT.json";
 import Footer from "./Footer";
@@ -23,13 +24,13 @@ export default function Home() {
         <p className="text-lg font-bold mb-4 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           {translate("HOME_WELCOME")}
         </p>
-        <div className="w-full max-w-4xl mx-auto grid gap-8 grid-cols-2 items-center mt-8 lg:mt-10">
+        <div className="w-full max-w-4xl mx-auto grid gap-2 grid-cols-2 items-center mt-8 lg:mt-10">
           <img
             src={PersonalPortrait}
             alt="Personal Portrait"
             className="mt-2 mb-8 w-64 lg:mx-auto border-2 border-pink-600 hover:border-blue-600 transition-colors duration-300"
           />
-          <div className="items-start flex flex-col gap-6 font-bold">
+          <div className="items-start flex flex-col gap-4 font-bold">
             <a
               href={ContactData.GITHUB_URL}
               target="_blank"
@@ -77,6 +78,16 @@ export default function Home() {
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("CV_DOWNLOAD")}
+            </Link>
+            <Link
+              to={CoverFile}
+              download
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
+            >
+              <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
+              {translate("COVER_LETTER_DOWNLOAD")}
             </Link>
           </div>
         </div>
