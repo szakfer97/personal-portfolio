@@ -25,13 +25,23 @@ export default function Home() {
           {translate("HOME_WELCOME")}
         </p>
         <div className="flex justify-center mt-8 lg:mt-10">
-          <img
-            src={PersonalPortrait}
-            alt="Personal Portrait"
-            className="w-64 border-2 border-pink-600 hover:border-blue-600 transition-colors duration-300"
-          />
+          <div className="relative">
+            <img
+              src={PersonalPortrait}
+              alt="Personal Portrait"
+              className="w-64 border-2 rounded-md border-pink-600 hover:border-blue-600 transition-colors duration-300"
+            />
+            <span
+              className="absolute inset-0 w-full h-full rounded-md animate-pulse opacity-80"
+              style={{
+                boxShadow: "0 0 40px 30px rgba(255, 255, 255, 1)",
+                zIndex: "-1",
+                filter: "blur(15px)",
+              }}
+            ></span>
+          </div>
         </div>
-        <div className="w-full max-w-4xl mx-auto my-8 grid gap-4 grid-cols-2 lg:grid-cols-3 items-center">
+        <div className="w-full max-w-4xl mx-auto my-12 grid gap-4 grid-cols-2 lg:grid-cols-3 items-center">
           <div className="font-bold">
             <a
               href={ContactData.LINKEDIN_URL}

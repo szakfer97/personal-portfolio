@@ -30,11 +30,21 @@ export default function About() {
         <h1 className="text-5xl font-bold mb-2 hover:text-gray-800">
           {translate("ABOUT_ABOUT")}
         </h1>
-        <img
-          src={PersonalPic}
-          alt="Personal Picture"
-          className="my-4 w-64 mx-auto border-2 border-pink-600 hover:border-blue-600 transition-colors duration-300"
-        />
+        <div className="relative my-12">
+          <img
+            src={PersonalPic}
+            alt="Personal Pic"
+            className="w-64 border-2 rounded-md border-pink-600 hover:border-blue-600 transition-colors duration-300"
+          />
+          <span
+            className="absolute inset-0 w-full h-full rounded-md animate-pulse opacity-80"
+            style={{
+              boxShadow: "0 0 40px 30px rgba(255, 255, 255, 1)",
+              zIndex: "-1",
+              filter: "blur(15px)",
+            }}
+          ></span>
+        </div>
         {[
           {
             title: translate("ABOUT_WORK"),
