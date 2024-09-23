@@ -110,7 +110,7 @@ export default function NavBar() {
                 <NavLink
                   key={path}
                   to={path}
-                  className="block px-3 py-2 rounded-md text-center font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="block px-3 py-2 rounded-md text-center font-medium hover:bg-gray-800"
                   style={({ isActive }) =>
                     isActive
                       ? {
@@ -124,7 +124,7 @@ export default function NavBar() {
                   {name}
                 </NavLink>
               ))}
-              <div className="flex justify-between mt-4 border-t border-gray-700 pt-4">
+              <div className="flex justify-between mt-4 border-t border-gray-800 pt-4">
                 {["EN", "HU", "RO"].map((lang) => (
                   <button
                     key={lang}

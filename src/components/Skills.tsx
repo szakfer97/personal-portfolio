@@ -15,6 +15,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiMongodb,
+  SiDotnet,
   SiPostgresql,
   SiExpress,
   SiCanva,
@@ -67,6 +68,11 @@ export default function Skills() {
       Icon: SiExpress,
       name: "Express",
       description: translate("SKILLS_EXPRESS"),
+    },
+    {
+      Icon: SiDotnet,
+      name: ".NET",
+      description: translate("SKILLS_NET"),
     },
     {
       Icon: SiMongodb,
