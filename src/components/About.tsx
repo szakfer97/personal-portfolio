@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PersonalPic from "../assets/personalpic.svg";
+import PersonalPortrait from "../assets/personalportrait.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
@@ -35,8 +35,8 @@ export default function About() {
         </h1>
         <div className="relative my-12">
           <img
-            src={PersonalPic}
-            alt="Personal Pic"
+            src={PersonalPortrait}
+            alt="Personal Portrait"
             className="w-64 border-2 rounded-md border-pink-600 hover:border-blue-600 transition-colors duration-300"
           />
           <span

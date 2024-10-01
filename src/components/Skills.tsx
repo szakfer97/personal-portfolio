@@ -15,10 +15,10 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiMongodb,
+  SiNextdotjs,
   SiDotnet,
   SiPostgresql,
   SiExpress,
-  SiCanva,
   SiJest,
 } from "react-icons/si";
 import { useTranslation } from "../translation/useTranslation";
@@ -60,6 +60,11 @@ export default function Skills() {
       description: translate("SKILLS_TAILWIND"),
     },
     {
+      Icon: SiNextdotjs,
+      name: "NextJS",
+      description: translate("SKILLS_NEXT"),
+    },
+    {
       Icon: FaNodeJs,
       name: "Node.js",
       description: translate("SKILLS_NODE"),
@@ -98,11 +103,6 @@ export default function Skills() {
       Icon: FaFigma,
       name: "Figma",
       description: translate("SKILLS_FIGMA"),
-    },
-    {
-      Icon: SiCanva,
-      name: "Canva",
-      description: translate("SKILLS_CANVA"),
     },
     {
       Icon: FaGit,

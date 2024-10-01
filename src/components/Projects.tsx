@@ -109,7 +109,7 @@ export default function Projects() {
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-black text-pink-600 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:text-white hover:bg-blue-600 cursor-pointer"
+                    className="bg-black text-pink-600 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:text-white"
                   >
                     <FaCode className="mr-1 group-hover:text-white transition-colors duration-200 ease-in-out" />
                     {tech}

@@ -6,7 +6,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import PersonalPortrait from "../assets/personalportrait.svg";
+import PersonalPic from "../assets/personalpic.svg";
 import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
 import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
@@ -18,17 +18,17 @@ export default function Home() {
   return (
     <div>
       <div className="container mx-auto flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 mt-8 sm:mt-16 lg:mt-20">
-        <h1 className="text-4xl font-bold my-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
+        <h1 className="text-4xl font-bold mt-2 mb-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           {translate("HOME_HELLO")}
         </h1>
         <p className="text-lg font-bold mb-4 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
           {translate("HOME_WELCOME")}
         </p>
-        <div className="flex justify-center mt-8 lg:mt-10">
+        <div className="flex justify-center mt-8 lg:mt-12">
           <div className="relative">
             <img
-              src={PersonalPortrait}
-              alt="Personal Portrait"
+              src={PersonalPic}
+              alt="Personal Pic"
               className="w-64 border-2 rounded-md border-pink-600 hover:border-blue-600 transition-colors duration-300"
             />
             <span
