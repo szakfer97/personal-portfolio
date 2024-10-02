@@ -30,6 +30,16 @@ export default function Skills() {
 
   const icons = [
     {
+      Icon: FaReact,
+      name: "React",
+      description: translate("SKILLS_REACT"),
+    },
+    {
+      Icon: SiTypescript,
+      name: "TypeScript",
+      description: translate("SKILLS_TS"),
+    },
+    {
       Icon: FaJs,
       name: "JavaScript",
       description: translate("SKILLS_JS"),
@@ -45,23 +55,13 @@ export default function Skills() {
       description: translate("SKILLS_CSS"),
     },
     {
-      Icon: SiTypescript,
-      name: "TypeScript",
-      description: translate("SKILLS_TS"),
-    },
-    {
-      Icon: FaReact,
-      name: "React",
-      description: translate("SKILLS_REACT"),
-    },
-    {
       Icon: SiTailwindcss,
       name: "Tailwind CSS",
       description: translate("SKILLS_TAILWIND"),
     },
     {
       Icon: SiNextdotjs,
-      name: "NextJS",
+      name: "Next.js",
       description: translate("SKILLS_NEXT"),
     },
     {
@@ -166,7 +166,7 @@ export default function Skills() {
               className={`mb-4 transition-transform transform-gpu`}
             />
             <p
-              className={`text-center text-sm mt-2 mb-4 italic font-bold uppercase transition-opacity group-hover:opacity-100`}
+              className={`text-center text-sm mt-2 mb-4 font-bold uppercase transition-opacity group-hover:opacity-100`}
             >
               {name}
             </p>
