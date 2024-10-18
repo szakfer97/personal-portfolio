@@ -41,7 +41,7 @@ export default function Home() {
             ></span>
           </div>
         </div>
-        <div className="w-full max-w-4xl mx-auto my-12 grid gap-4 grid-cols-2 lg:grid-cols-3 items-center">
+        <div className="w-full max-w-4xl mx-auto my-12 grid gap-6 grid-cols-2 lg:grid-cols-3 items-center">
           <div className="font-bold">
             <a
               href={ContactData.LINKEDIN_URL}

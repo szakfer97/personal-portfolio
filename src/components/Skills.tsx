@@ -20,6 +20,9 @@ import {
   SiPostgresql,
   SiExpress,
   SiJest,
+  SiPostman,
+  SiJenkins,
+  SiSonar,
 } from "react-icons/si";
 import { useTranslation } from "../translation/useTranslation";
 import Footer from "./Footer";
@@ -93,6 +96,21 @@ export default function Skills() {
       Icon: SiJest,
       name: "Jest",
       description: translate("SKILLS_JEST"),
+    },
+    {
+      Icon: SiPostman,
+      name: "Postman",
+      description: translate("SKILLS_POSTMAN"),
+    },
+    {
+      Icon: SiJenkins,
+      name: "Jenkins",
+      description: translate("SKILLS_JENKINS"),
+    },
+    {
+      Icon: SiSonar,
+      name: "SonarQube",
+      description: translate("SKILLS_SONAR"),
     },
     {
       Icon: FaJira,
