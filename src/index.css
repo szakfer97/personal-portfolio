@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-r from-blue-500 to-pink-600 text-white tracking-wide;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @apply text-white;
 }
 
 a:hover {

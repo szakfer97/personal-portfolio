@@ -8,24 +8,27 @@ import Footer from "./Footer";
 export default function About() {
   const { translate } = useTranslation();
   const skills = [
+    "React",
+    "TypeScript",
     "JavaScript",
     "HTML",
     "CSS",
-    "TypeScript",
-    "React",
-    "Tailwind",
-    "Node",
+    "Tailwind CSS",
+    "Next.js",
+    "Node.js",
     "Express",
     ".NET",
     "MongoDB",
     "PostgreSQL",
     "Jest",
-    "Jira",
-    "Figma",
-    "Canva",
+    "Postman",
+    "Jenkins",
+    "SonarQube",
     "Git",
     "GitHub",
     "GitLab",
+    "Jira",
+    "Figma",
   ];
   return (
     <div className="h-screen flex flex-col justify-between">

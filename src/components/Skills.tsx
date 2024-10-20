@@ -113,16 +113,6 @@ export default function Skills() {
       description: translate("SKILLS_SONAR"),
     },
     {
-      Icon: FaJira,
-      name: "Jira",
-      description: translate("SKILLS_JIRA"),
-    },
-    {
-      Icon: FaFigma,
-      name: "Figma",
-      description: translate("SKILLS_FIGMA"),
-    },
-    {
       Icon: FaGit,
       name: "Git",
       description: translate("SKILLS_GIT"),
@@ -136,6 +126,16 @@ export default function Skills() {
       Icon: FaGitlab,
       name: "GitLab",
       description: translate("SKILLS_GITLAB"),
+    },
+    {
+      Icon: FaJira,
+      name: "Jira",
+      description: translate("SKILLS_JIRA"),
+    },
+    {
+      Icon: FaFigma,
+      name: "Figma",
+      description: translate("SKILLS_FIGMA"),
     },
   ];
 
