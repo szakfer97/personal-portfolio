@@ -10,15 +10,25 @@ export default function Projects() {
       name: "Personal portfolio",
       description: translate("PROJECTS_DESCRIPTION1"),
       link: "https://github.com/szakfer97/personal-portfolio",
-      techStack: ["TypeScript", "React", "Tailwind CSS"],
+      techStack: [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+      ],
     },
     {
       name: "Boiler management app",
       description: translate("PROJECTS_DESCRIPTION2"),
       link: "https://github.com/szakfer97/boiler-management-app",
       techStack: [
-        "TypeScript",
         "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
         "Tailwind CSS",
         "MongoDB",
         "Node.js",
@@ -35,13 +45,13 @@ export default function Projects() {
       name: "Tic tac toe",
       description: translate("PROJECTS_DESCRIPTION4"),
       link: "https://github.com/szakfer97/tic-tac-toe",
-      techStack: ["Vite", "Svelte", "TypeScript", "JavaScript", "HTML", "CSS"],
+      techStack: ["Svelte", "TypeScript", "JavaScript", "HTML", "CSS"],
     },
     {
       name: "Workout tracker",
       description: translate("PROJECTS_DESCRIPTION5"),
       link: "https://github.com/szakfer97/workout-tracker",
-      techStack: ["Vite", "Vue", "TypeScript", "JavaScript", "HTML", "CSS"],
+      techStack: ["Vue", "TypeScript", "JavaScript", "HTML", "CSS"],
     },
     {
       name: "Quiz show",
@@ -78,16 +88,16 @@ export default function Projects() {
   return (
     <div>
       <div className="flex flex-col items-center justify-center p-4 lg:p-8">
-        <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out hover:text-gray-800">
+        <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out hover:text-purple-600">
           {translate("PROJECTS")}
         </h1>
-        <p className="mt-4 text-lg font-bold hover:text-gray-800">
+        <p className="mt-4 text-lg font-bold hover:text-purple-600">
           {translate("PROJECTS_TEXT1")}
         </p>
-        <p className="mt-4 text-lg font-bold hover:text-gray-800">
+        <p className="mt-4 text-lg font-bold hover:text-purple-600">
           {translate("PROJECTS_TEXT2")}
         </p>
-        <p className="mt-4 text-lg font-bold hover:text-gray-800">
+        <p className="mt-4 text-lg font-bold hover:text-purple-600">
           {translate("PROJECTS_TEXT3")}
         </p>
         <div className="mt-8 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-3">

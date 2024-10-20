@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <div>
       <div className="container mx-auto flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 mt-8 sm:mt-16 lg:mt-20">
-        <h1 className="text-4xl font-bold mt-2 mb-8 sm:text-5xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
+        <h1 className="text-4xl font-bold mt-2 mb-8 sm:text-5xl transition-all duration-300 hover:text-purple-600 hover:scale-105">
           {translate("HOME_HELLO")}
         </h1>
-        <p className="text-lg font-bold mb-4 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-gray-800 hover:scale-105">
+        <p className="text-lg font-bold mb-4 sm:text-xl lg:text-2xl transition-all duration-300 hover:text-purple-600 hover:scale-105">
           {translate("HOME_WELCOME")}
         </p>
         <div className="flex justify-center mt-8 lg:mt-12">
@@ -47,7 +47,7 @@ export default function Home() {
               href={ContactData.LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
             >
               <FaLinkedin className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("HOME_LINKEDIN")}
@@ -58,7 +58,7 @@ export default function Home() {
               href={ContactData.GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
             >
               <FaGithub className="h-8 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("HOME_GITHUB")}
@@ -69,14 +69,14 @@ export default function Home() {
               href="mailto:szakfer97@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
             >
               <AiOutlineMail className="h-6 w-6 md:mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {ContactData.EMAIL}
             </a>
           </div>
           <div className="font-bold">
-            <div className="flex items-center hover:text-gray-800 hover:scale-105 transition-colors duration-200">
+            <div className="flex items-center hover:text-purple-600 hover:scale-105 transition-colors duration-200">
               <FaPhoneSquareAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
@@ -94,7 +94,7 @@ export default function Home() {
               download
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("CV_DOWNLOAD")}
@@ -106,7 +106,7 @@ export default function Home() {
               download
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-800 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("COVER_LETTER_DOWNLOAD")}

@@ -153,22 +153,22 @@ export default function Skills() {
   return (
     <div>
       <div className="flex items-center justify-center mt-8 mb-4">
-        <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:hover:text-purple-600">
           {translate("SKILLS")}
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-purple-600">
           {translate("SKILLS_TEXT1")}
         </p>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-purple-600">
           {translate("SKILLS_TEXT2")}
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-gray-800">
+        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-purple-600">
           {translate("SKILLS_TEXT3")}
         </p>
       </div>
@@ -177,7 +177,7 @@ export default function Skills() {
           <div
             key={i}
             onClick={() => openModal({ name, description })}
-            className="self-center hover:scale-125 cursor-pointer hover:text-gray-800"
+            className="self-center hover:scale-125 cursor-pointer hover:text-purple-600"
           >
             <Icon
               size={80}

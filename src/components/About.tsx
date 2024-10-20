@@ -33,7 +33,7 @@ export default function About() {
   return (
     <div className="h-screen flex flex-col justify-between">
       <div className="flex flex-col justify-center items-center p-10">
-        <h1 className="text-5xl font-bold mb-2 hover:text-gray-800">
+        <h1 className="text-5xl font-bold mb-2 hover:text-purple-600">
           {translate("ABOUT_ABOUT")}
         </h1>
         <div className="relative my-12">
@@ -139,10 +139,10 @@ export default function About() {
             {translate("HOBBIES")}
           </p>
         </div>
-        <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
+        <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-purple-600">
           {translate("ABOUT_INTEREST")}
         </p>
-        <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-gray-800">
+        <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-purple-600">
           {translate("ABOUT_INTEREST_DOWNLOAD")}
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
