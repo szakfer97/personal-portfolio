@@ -133,6 +133,14 @@ export default function About() {
         </div>
         <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
           <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
+            {translate("ABOUT_LANGUAGES_TITLE")}
+          </h2>
+          <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
+            {translate("ABOUT_LANGUAGES")}
+          </p>
+        </div>
+        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-blue-600">
             {translate("ABOUT_HOBBIES")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">

@@ -36,7 +36,7 @@ export default function NavBar() {
                       ? {
                           fontWeight: "bold",
                           backgroundColor: "white",
-                          color: "purple",
+                          color: "red",
                         }
                       : {}
                   }
@@ -116,7 +116,7 @@ export default function NavBar() {
                       ? {
                           fontWeight: "bold",
                           backgroundColor: "white",
-                          color: "purple",
+                          color: "red",
                         }
                       : {}
                   }
