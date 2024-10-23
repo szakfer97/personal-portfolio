@@ -42,41 +42,41 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full max-w-4xl mx-auto my-12 grid gap-6 grid-cols-2 lg:grid-cols-3 items-center">
-          <div className="font-bold">
+          <div className="font-bold hover:scale-105">
             <a
               href={ContactData.LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 transition-colors duration-200"
             >
               <FaLinkedin className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("HOME_LINKEDIN")}
             </a>
           </div>
-          <div className="font-bold">
+          <div className="font-bold hover:scale-105">
             <a
               href={ContactData.GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 transition-colors duration-200"
             >
               <FaGithub className="h-8 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("HOME_GITHUB")}
             </a>
           </div>
-          <div className="font-bold">
+          <div className="font-bold hover:scale-105">
             <a
               href="mailto:szakfer97@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 transition-colors duration-200"
             >
               <AiOutlineMail className="h-6 w-6 md:mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {ContactData.EMAIL}
             </a>
           </div>
-          <div className="font-bold">
-            <div className="flex items-center hover:text-purple-600 hover:scale-105 transition-colors duration-200">
+          <div className="font-bold hover:scale-105">
+            <div className="flex items-center hover:text-purple-600 transition-colors duration-200">
               <FaPhoneSquareAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               <button
                 onClick={(e) => {
@@ -88,25 +88,25 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="font-bold">
+          <div className="font-bold hover:scale-105">
             <Link
               to={CVFile}
               download
               target="_blank"
               rel="noreferrer"
-              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600  transition-colors duration-200"
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("CV_DOWNLOAD")}
             </Link>
           </div>
-          <div className="font-bold">
+          <div className="font-bold hover:scale-105">
             <Link
               to={CoverFile}
               download
               target="_blank"
               rel="noreferrer"
-              className="hover:text-purple-600 hover:scale-105 transition-colors duration-200"
+              className="hover:text-purple-600 transition-colors duration-200"
             >
               <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
               {translate("COVER_LETTER_DOWNLOAD")}
