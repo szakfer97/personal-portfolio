@@ -52,7 +52,7 @@ export default function NavBar() {
                   onClick={() => setLanguage(lang.toLowerCase())}
                   className={`px-3 py-1 rounded-md text-sm font-bold transition-colors duration-200 ${
                     language === lang.toLowerCase()
-                      ? "bg-white text-purple-600 hover:text-pink-600"
+                      ? "bg-white text-pink-600 hover:text-purple-600"
                       : "hover:bg-white text-purple-600 hover:text-pink-600"
                   }`}
                 >
@@ -131,7 +131,7 @@ export default function NavBar() {
                     onClick={() => setLanguage(lang.toLowerCase())}
                     className={`px-3 py-1 rounded-md text-sm font-bold transition-colors duration-200 ${
                       language === lang.toLowerCase()
-                        ? "bg-white text-purple-600 hover:text-pink-600"
+                        ? "bg-white text-pink-600 hover:text-purple-600"
                         : "hover:bg-white text-purple-600 hover:text-pink-600"
                     }`}
                   >

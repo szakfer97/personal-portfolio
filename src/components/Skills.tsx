@@ -153,22 +153,22 @@ export default function Skills() {
   return (
     <div>
       <div className="flex items-center justify-center mt-8 mb-4">
-        <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:hover:text-purple-600">
+        <h1 className="text-3xl font-bold lg:text-5xl transition-colors duration-200 ease-in-out group-hover:text-purple-600 hover:hover:text-purple-600">
           {translate("SKILLS")}
         </h1>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-purple-600">
+        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-purple-600 hover:text-purple-600">
           {translate("SKILLS_TEXT1")}
         </p>
       </div>
       <div className="flex items-center justify-center my-2">
-        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-purple-600">
+        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-purple-600 hover:text-purple-600">
           {translate("SKILLS_TEXT2")}
         </p>
       </div>
       <div className="flex items-center justify-center mt-2 mb-4">
-        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-blue-500 hover:text-purple-600">
+        <p className="px-4 text-lg font-bold transition-colors duration-200 ease-in-out group-hover:text-purple-600 hover:text-purple-600">
           {translate("SKILLS_TEXT3")}
         </p>
       </div>
@@ -197,11 +197,11 @@ export default function Skills() {
           onClick={closeModal}
         >
           <div
-            className="bg-gradient-to-r from-blue-500 to-pink-600 p-8 rounded-lg shadow-lg"
+            className="bg-gradient-to-r from-purple-500 to-pink-600 p-8 rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mt-4 flex items-center justify-center">
-              <h2 className="text-3xl font-bold hover:text-blue-600">
+              <h2 className="text-3xl font-bold hover:text-purple-600">
                 {currentTech.name}
               </h2>
             </div>
@@ -209,7 +209,7 @@ export default function Skills() {
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}
-                className="px-8 py-3 bg-blue-500 rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
+                className="px-8 py-3 bg-purple-600 rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
               >
                 <span className="text-xl font-bold">
                   {translate("SKILLS_BUTTON")}
