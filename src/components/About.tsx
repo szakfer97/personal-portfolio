@@ -154,12 +154,12 @@ export default function About() {
           {translate("ABOUT_INTEREST_DOWNLOAD")}
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
-          <button className="my-4 bg-black text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-4 bg-black text-pink-600 hover:bg-purple-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             {translate("CV_DOWNLOAD")}
           </button>
         </Link>
         <Link to={CoverFile} download target="_blank" rel="noreferrer">
-          <button className="my-2 bg-black text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-2 bg-black text-pink-600 hover:bg-purple-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             {translate("COVER_LETTER_DOWNLOAD")}
           </button>
         </Link>

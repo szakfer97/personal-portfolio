@@ -209,7 +209,7 @@ export default function Skills() {
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}
-                className="px-8 py-3 bg-purple-600 rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
+                className="px-8 py-3 bg-transparent rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
               >
                 <span className="text-xl font-bold">
                   {translate("SKILLS_BUTTON")}
