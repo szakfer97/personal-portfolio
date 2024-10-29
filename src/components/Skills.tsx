@@ -17,10 +17,10 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiDotnet,
+  SiMysql,
   SiPostgresql,
   SiExpress,
   SiJest,
-  SiPostman,
   SiJenkins,
   SiSonar,
 } from "react-icons/si";
@@ -88,6 +88,11 @@ export default function Skills() {
       description: translate("SKILLS_MONGO"),
     },
     {
+      Icon: SiMysql,
+      name: "MySQL",
+      description: translate("SKILLS_MYSQL"),
+    },
+    {
       Icon: SiPostgresql,
       name: "PostgreSQL",
       description: translate("SKILLS_POSTGRE"),
@@ -96,11 +101,6 @@ export default function Skills() {
       Icon: SiJest,
       name: "Jest",
       description: translate("SKILLS_JEST"),
-    },
-    {
-      Icon: SiPostman,
-      name: "Postman",
-      description: translate("SKILLS_POSTMAN"),
     },
     {
       Icon: SiJenkins,
@@ -209,7 +209,7 @@ export default function Skills() {
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}
-                className="px-8 py-3 bg-transparent rounded-lg hover:bg-pink-600 hover:scale-105 active:scale-95 transition-transform duration-300"
+                className="px-8 py-3 bg-transparent rounded-lg hover:text-purple-600 hover:scale-105 active:scale-95 transition-transform duration-300"
               >
                 <span className="text-xl font-bold">
                   {translate("SKILLS_BUTTON")}
