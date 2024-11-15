@@ -26,6 +26,7 @@ import {
 } from "react-icons/si";
 import { useTranslation } from "../translation/useTranslation";
 import Footer from "./Footer";
+
 export default function Skills() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentTech, setCurrentTech] = useState({ name: "", description: "" });
