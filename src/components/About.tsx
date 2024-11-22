@@ -63,9 +63,9 @@ export default function About() {
         ].map((section, index) => (
           <section
             key={index}
-            className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105"
+            className="bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105"
           >
-            <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-purple-600">
+            <h2 className="text-2xl font-bold mb-4 text-purple-600 hover:text-pink-600">
               {section.title}
             </h2>
             <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
@@ -73,8 +73,8 @@ export default function About() {
             </p>
           </section>
         ))}
-        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-purple-600">
+        <div className="bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-purple-600 hover:text-pink-600">
             {translate("SKILLS")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
@@ -89,58 +89,52 @@ export default function About() {
           </ul>
           <p className="my-4 text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             {translate("ABOUT_SKILLS_LINK1")}
-            <Link
-              to="/skills"
-              className="text-pink-600 hover:text-purple-600"
-              style={{ textDecoration: "underline" }}
-            >
+            <Link to="/skills" className="text-purple-600 hover:text-pink-600">
               {translate("SKILLS")}
             </Link>{" "}
             {translate("ABOUT_SKILLS_LINK2")}
           </p>
         </div>
-        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-purple-600">
+        <div className="bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-purple-600 hover:text-pink-600">
             {translate("PROJECTS")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             {translate("ABOUT_PROJECTS_LINK1")}
             <Link
               to="/projects"
-              className="text-pink-600 hover:text-purple-600"
-              style={{ textDecoration: "underline" }}
+              className="text-purple-600 hover:text-pink-600"
             >
               {translate("PROJECTS")}
             </Link>{" "}
             {translate("ABOUT_PROJECTS_LINK2")}
           </p>
         </div>
-        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-purple-600">
+        <div className="bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-purple-600 hover:text-pink-600">
             {translate("CERTIFICATES")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             {translate("ABOUT_CERTIFICATES_LINK1")}
             <Link
               to="/certificates"
-              className="text-pink-600 hover:text-purple-600"
-              style={{ textDecoration: "underline" }}
+              className="text-purple-600 hover:text-pink-600"
             >
               {translate("CERTIFICATES")}
             </Link>{" "}
             {translate("ABOUT_CERTIFICATES_LINK2")}
           </p>
         </div>
-        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-purple-600">
+        <div className="bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-purple-600 hover:text-pink-600">
             {translate("ABOUT_LANGUAGES_TITLE")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             {translate("ABOUT_LANGUAGES")}
           </p>
         </div>
-        <div className="bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
-          <h2 className="text-2xl font-bold mb-4 text-pink-600 hover:text-purple-600">
+        <div className="bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105">
+          <h2 className="text-2xl font-bold mb-4 text-purple-600 hover:text-pink-600">
             {translate("ABOUT_HOBBIES")}
           </h2>
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
@@ -154,12 +148,12 @@ export default function About() {
           {translate("ABOUT_INTEREST_DOWNLOAD")}
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
-          <button className="my-4 bg-black text-pink-600 hover:bg-purple-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-4 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             {translate("CV_DOWNLOAD")}
           </button>
         </Link>
         <Link to={CoverFile} download target="_blank" rel="noreferrer">
-          <button className="my-2 bg-black text-pink-600 hover:bg-purple-600 hover:text-white font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-2 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             {translate("COVER_LETTER_DOWNLOAD")}
           </button>
         </Link>

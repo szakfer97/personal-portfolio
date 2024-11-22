@@ -104,12 +104,12 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="bg-black p-4 shadow-md rounded-lg flex flex-col transition-transform duration-200 ease-in-out hover:scale-105"
+              className="bg-gray-900 p-4 shadow-md rounded-lg flex flex-col transition-transform duration-200 ease-in-out hover:scale-105"
             >
               <a
                 href={project.link}
                 target="_blank"
-                className="flex items-center cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105 text-pink-600 hover:text-purple-600"
+                className="flex items-center cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105 text-purple-600 hover:text-pink-600"
               >
                 <FaGithub className="mr-2" />
                 <p className="font-medium  hover:underline">{project.name}</p>
@@ -119,7 +119,7 @@ export default function Projects() {
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-black text-pink-600 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out hover:text-purple-600"
+                    className="bg-gray-900 text-purple-600 hover:text-pink-600 px-2 py-1 mr-2 inline-flex items-center rounded-full mb-2 group transition-colors duration-200 ease-in-out"
                   >
                     <FaCode className="mr-1 group-hover:text-purple-600 transition-colors duration-200 ease-in-out" />
                     {tech}

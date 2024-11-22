@@ -146,10 +146,10 @@ function Section({
 }) {
   return (
     <div
-      className={`bg-black p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105`}
+      className={`bg-gray-900 p-8 shadow-md rounded-lg mb-8 transition-all duration-200 hover:shadow-2xl hover:scale-105`}
     >
       <h2
-        className={`text-2xl font-bold mb-4 transition-colors px-4 sm:px-6 lg:px-8 duration-200 text-pink-600 hover:text-purple-600`}
+        className={`text-2xl font-bold transition-colors px-4 sm:px-6 lg:px-8 duration-200 text-purple-600 hover:text-pink-600`}
       >
         {title}
       </h2>

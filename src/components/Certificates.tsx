@@ -64,9 +64,9 @@ export default function Certificates() {
           {certificates.map((certificate) => (
             <div
               key={certificate.name}
-              className="bg-black rounded-xl shadow-lg p-8 md:p-10 lg:p-12 group-hover:shadow-2xl transition-shadow duration-200 hover:scale-110"
+              className="bg-gray-900 rounded-xl shadow-lg p-8 md:p-10 lg:p-12 group-hover:shadow-2xl transition-shadow duration-200 hover:scale-110"
             >
-              <h2 className="text-2xl font-bold text-pink-600 hover:text-purple-600 transition-colors duration-200">
+              <h2 className="text-2xl font-bold text-purple-600 hover:text-pink-600 transition-colors duration-200">
                 {certificate.name}
               </h2>
               <p className="mt-4 mb-8">{certificate.description}</p>

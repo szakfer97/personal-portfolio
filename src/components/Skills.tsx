@@ -198,15 +198,15 @@ export default function Skills() {
           onClick={closeModal}
         >
           <div
-            className="bg-gradient-to-r from-purple-500 to-pink-600 p-8 rounded-lg shadow-lg"
+            className="bg-gray-900 p-8 rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="mt-4 flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <h2 className="text-3xl font-bold hover:text-purple-600">
                 {currentTech.name}
               </h2>
             </div>
-            <p className="mt-4">{currentTech.description}</p>
+            <p className="mt-8">{currentTech.description}</p>
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}
