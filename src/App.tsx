@@ -1,13 +1,34 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import { TranslationProvider } from "./translation/useTranslationProvider";
 import NavBar from "./components/NavBar";
 
-const Home = lazy(() => import("./components/Home"));
-const About = lazy(() => import("./components/About"));
-const Projects = lazy(() => import("./components/Projects"));
-const Skills = lazy(() => import("./components/Skills"));
-const Certificates = lazy(() => import("./components/Certificates"));
+const preloadRoutes = () => {
+  const routes = ["Home", "About", "Projects", "Skills", "Certificates"];
+  routes.forEach((route) => {
+    const link = document.createElement("link");
+    link.rel = "modulepreload";
+    link.href = `/src/components/${route}.tsx`;
+    document.head.appendChild(link);
+  });
+};
+
+const Home = lazy(
+  () => import(/* webpackChunkName: "home" */ "./components/Home")
+);
+const About = lazy(
+  () => import(/* webpackChunkName: "about" */ "./components/About")
+);
+const Projects = lazy(
+  () => import(/* webpackChunkName: "projects" */ "./components/Projects")
+);
+const Skills = lazy(
+  () => import(/* webpackChunkName: "skills" */ "./components/Skills")
+);
+const Certificates = lazy(
+  () =>
+    import(/* webpackChunkName: "certificates" */ "./components/Certificates")
+);
 
 export default function App() {
   const routes = [
@@ -17,6 +38,11 @@ export default function App() {
     { path: "/skills", element: <Skills /> },
     { path: "/certificates", element: <Certificates /> },
   ];
+
+  useEffect(() => {
+    preloadRoutes();
+  }, []);
+
   return (
     <BrowserRouter>
       <TranslationProvider>

@@ -80,9 +80,12 @@ export default function About() {
           <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal">
             {translate("ABOUT_SKILLS_LIST")}
           </p>
-          <ul className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal list-disc list-inside pl-4">
             {skills.map((skill, index) => (
-              <li key={index} className="mt-2">
+              <li
+                key={index}
+                className="mt-2 text-purple-600 hover:text-pink-600 transition-colors duration-200"
+              >
                 {skill}
               </li>
             ))}
