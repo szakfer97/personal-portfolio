@@ -40,7 +40,7 @@ export default function About() {
           <img
             src={PersonalPortrait}
             alt="Personal Portrait"
-            className="w-64 border-2 rounded-md border-pink-600 hover:border-blue-600 transition-colors duration-300"
+            className="w-64 border-2 rounded-md border-pink-600 hover:border-purple-600 transition-colors duration-300"
           />
           <span
             className="absolute inset-0 w-full h-full rounded-md animate-pulse opacity-80"
@@ -151,12 +151,12 @@ export default function About() {
           {translate("ABOUT_INTEREST_DOWNLOAD")}
         </p>
         <Link to={CVFile} download target="_blank" rel="noreferrer">
-          <button className="my-4 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-4 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-3 px-6 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             {translate("CV_DOWNLOAD")}
           </button>
         </Link>
         <Link to={CoverFile} download target="_blank" rel="noreferrer">
-          <button className="my-2 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-2 px-4 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
+          <button className="my-2 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-3 px-6 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
             {translate("COVER_LETTER_DOWNLOAD")}
           </button>
         </Link>

@@ -29,7 +29,7 @@ export default function Home() {
             <img
               src={PersonalPic}
               alt="Personal Pic"
-              className="w-64 border-2 rounded-md border-pink-600 hover:border-blue-600 transition-colors duration-300"
+              className="w-64 border-2 rounded-md border-pink-600 hover:border-purple-600 transition-colors duration-300"
             />
             <span
               className="absolute inset-0 w-full h-full rounded-md animate-pulse opacity-80"
@@ -41,78 +41,76 @@ export default function Home() {
             ></span>
           </div>
         </div>
-        <div className="w-full max-w-4xl mx-auto my-12 grid gap-6 grid-cols-2 lg:grid-cols-3 items-center">
-          <div className="font-bold hover:scale-105">
-            <a
-              href={ContactData.LINKEDIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-600 transition-colors duration-200"
+        <div className="font-bold w-full max-w-4xl mx-auto mt-12 md:mt-20 mb-12 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 whitespace-nowrap">
+          {[
+            {
+              href: ContactData.LINKEDIN_URL,
+              icon: <FaLinkedin />,
+              text: translate("HOME_LINKEDIN"),
+            },
+            {
+              href: ContactData.GITHUB_URL,
+              icon: <FaGithub />,
+              text: translate("HOME_GITHUB"),
+            },
+            {
+              href: "mailto:szakfer97@gmail.com",
+              icon: <AiOutlineMail />,
+              text: ContactData.EMAIL,
+            },
+            {
+              href: CVFile,
+              icon: <FaRegFilePdf />,
+              text: translate("CV_DOWNLOAD"),
+              isDownload: true,
+            },
+            {
+              href: CoverFile,
+              icon: <FaRegFilePdf />,
+              text: translate("COVER_LETTER_DOWNLOAD"),
+              isDownload: true,
+            },
+          ].map(({ href, icon, text, isDownload }, index) => (
+            <div
+              key={index}
+              className="transition-all duration-200 hover:scale-105"
             >
-              <FaLinkedin className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {translate("HOME_LINKEDIN")}
-            </a>
-          </div>
-          <div className="font-bold hover:scale-105">
-            <a
-              href={ContactData.GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-600 transition-colors duration-200"
-            >
-              <FaGithub className="h-8 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {translate("HOME_GITHUB")}
-            </a>
-          </div>
-          <div className="font-bold hover:scale-105">
-            <a
-              href="mailto:szakfer97@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-purple-600 transition-colors duration-200"
-            >
-              <AiOutlineMail className="h-6 w-6 md:mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {ContactData.EMAIL}
-            </a>
-          </div>
-          <div className="font-bold hover:scale-105">
-            <div className="flex items-center hover:text-purple-600 transition-colors duration-200">
-              <FaPhoneSquareAlt className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigator.clipboard.writeText(ContactData.PHONE);
-                }}
-              >
-                {ContactData.PHONE}
-              </button>
+              {isDownload ? (
+                <Link
+                  to={href}
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center gap-x-2 bg-gray-900 text-purple-600 hover:text-pink-600 transition-all duration-200 border-2 border-transparent rounded-lg px-6 py-4 shadow-md hover:shadow-purple-500/30 text-center"
+                >
+                  <span className="text-xl">{icon}</span>
+                  <span className="text-base sm:text-lg">{text}</span>
+                </Link>
+              ) : (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-x-2 bg-gray-900 text-purple-600 hover:text-pink-600 transition-all duration-200 border-2 border-transparent rounded-lg px-6 py-4 shadow-md hover:shadow-purple-500/30 text-center"
+                >
+                  <span className="text-xl">{icon}</span>
+                  <span className="text-base sm:text-lg">{text}</span>
+                </a>
+              )}
             </div>
-          </div>
-          <div className="font-bold hover:scale-105">
-            <Link
-              to={CVFile}
-              download
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-purple-600  transition-colors duration-200"
-            >
-              <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {translate("CV_DOWNLOAD")}
-            </Link>
-          </div>
-          <div className="font-bold hover:scale-105">
-            <Link
-              to={CoverFile}
-              download
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-purple-600 transition-colors duration-200"
-            >
-              <FaRegFilePdf className="h-6 w-6 mr-2 animate-pulse group-hover:animate-pulse md:inline hidden" />
-              {translate("COVER_LETTER_DOWNLOAD")}
-            </Link>
-          </div>
+          ))}
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              navigator.clipboard.writeText(ContactData.PHONE);
+            }}
+            className="flex items-center justify-center gap-x-2 bg-gray-900 text-purple-600 hover:text-pink-600 transition-all duration-200 border-2 border-transparent rounded-lg px-6 py-4 shadow-md hover:shadow-purple-500/30 text-center"
+          >
+            <FaPhoneSquareAlt className="text-xl" />
+            <span className="text-base sm:text-lg">{ContactData.PHONE}</span>
+          </button>
         </div>
+
         <div className="w-full max-w-4xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
           <Section
             title={translate("ABOUT_ABOUT")}
