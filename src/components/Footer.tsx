@@ -15,15 +15,6 @@ export default function Footer() {
         </span>
         <div className="flex flex-initial sm:flex-1 justify-center sm:justify-end space-x-6 mt-2 sm:mt-0">
           <a
-            href="mailto:szakfer97@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-purple-600 hover:text-pink-600 flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
-          >
-            <AiOutlineMail className="inline h-6 w-6 mr-1 animate-pulse" />
-            <span className="sr-only sm:not-sr-only">Email</span>
-          </a>
-          <a
             href="https://www.linkedin.com/in/szakacsi-ferenc-adam/"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,6 +31,15 @@ export default function Footer() {
           >
             <FaGithub className="inline h-6 w-6 mr-1 animate-pulse" />
             <span className="sr-only sm:not-sr-only">GitHub</span>
+          </a>
+          <a
+            href="mailto:szakfer97@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-600 hover:text-pink-600 flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
+          >
+            <AiOutlineMail className="inline h-6 w-6 mr-1 animate-pulse" />
+            <span className="sr-only sm:not-sr-only">Email</span>
           </a>
         </div>
       </div>
