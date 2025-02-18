@@ -23,7 +23,10 @@ import {
   SiJest,
   SiJenkins,
   SiSonar,
+  SiVite,
+  SiWebpack,
 } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 import { useTranslation } from "../translation/useTranslation";
 import Footer from "./Footer";
 
@@ -99,6 +102,11 @@ export default function Skills() {
       description: translate("SKILLS_POSTGRE"),
     },
     {
+      Icon: VscAzure,
+      name: "Azure",
+      description: translate("SKILLS_AZURE"),
+    },
+    {
       Icon: SiJest,
       name: "Jest",
       description: translate("SKILLS_JEST"),
@@ -127,6 +135,16 @@ export default function Skills() {
       Icon: FaGitlab,
       name: "GitLab",
       description: translate("SKILLS_GITLAB"),
+    },
+    {
+      Icon: SiVite,
+      name: "Vite",
+      description: translate("SKILLS_VITE"),
+    },
+    {
+      Icon: SiWebpack,
+      name: "Webpack",
+      description: translate("SKILLS_WEBPACK"),
     },
     {
       Icon: FaJira,
@@ -206,7 +224,9 @@ export default function Skills() {
                 {currentTech.name}
               </h2>
             </div>
-            <p className="mt-8">{currentTech.description}</p>
+            <p className="mt-8 whitespace-pre-line">
+              {currentTech.description.split(". ").join(".\n")}
+            </p>
             <div className="mt-8 flex items-center justify-center">
               <button
                 onClick={closeModal}

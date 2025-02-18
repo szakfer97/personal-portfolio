@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import PersonalPortrait from "../assets/personalportrait.svg";
-import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
-import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
 import Footer from "./Footer";
 
@@ -22,11 +20,14 @@ export default function About() {
     "PostgreSQL",
     "Jest",
     "Postman",
+    "Azure",
     "Jenkins",
     "SonarQube",
     "Git",
     "GitHub",
     "GitLab",
+    "Vite",
+    "Webpack",
     "Jira",
     "Figma",
   ];
@@ -148,18 +149,8 @@ export default function About() {
           {translate("ABOUT_INTEREST")}
         </p>
         <p className="text-lg max-w-[40rem] mx-auto leading-relaxed lg:text-xl lg:leading-normal hover:text-purple-600">
-          {translate("ABOUT_INTEREST_DOWNLOAD")}
+          {translate("ABOUT_INTEREST_CONNECT")}
         </p>
-        <Link to={CVFile} download target="_blank" rel="noreferrer">
-          <button className="my-4 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-3 px-6 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
-            {translate("CV_DOWNLOAD")}
-          </button>
-        </Link>
-        <Link to={CoverFile} download target="_blank" rel="noreferrer">
-          <button className="my-2 bg-gray-900 text-purple-600 hover:text-pink-600 font-bold py-3 px-6 rounded transition-transform duration-200 ease-in-out scale-100 hover:scale-110 active:scale-105">
-            {translate("COVER_LETTER_DOWNLOAD")}
-          </button>
-        </Link>
       </div>
       <Footer />
     </div>

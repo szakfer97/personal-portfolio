@@ -1,14 +1,6 @@
-import { Link } from "react-router-dom";
-import {
-  FaPhoneSquareAlt,
-  FaRegFilePdf,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaPhoneSquareAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import PersonalPic from "../assets/personalpic.svg";
-import CVFile from "../assets/CV_Szakacsi_Ferenc-Adam.pdf";
-import CoverFile from "../assets/Cover_Letter_Szakacsi_Ferenc-Adam.pdf";
 import { useTranslation } from "../translation/useTranslation";
 import ContactData from "../local/CONTACT.json";
 import Footer from "./Footer";
@@ -41,7 +33,7 @@ export default function Home() {
             ></span>
           </div>
         </div>
-        <div className="font-bold w-full max-w-4xl mx-auto mt-12 md:mt-20 mb-12 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 whitespace-nowrap">
+        <div className="font-bold w-full max-w-4xl mx-auto mt-12 md:mt-20 mb-12 grid gap-4 grid-cols-1 sm:grid-cols-2 whitespace-nowrap">
           {[
             {
               href: ContactData.LINKEDIN_URL,
@@ -58,45 +50,20 @@ export default function Home() {
               icon: <AiOutlineMail />,
               text: ContactData.EMAIL,
             },
-            {
-              href: CVFile,
-              icon: <FaRegFilePdf />,
-              text: translate("CV_DOWNLOAD"),
-              isDownload: true,
-            },
-            {
-              href: CoverFile,
-              icon: <FaRegFilePdf />,
-              text: translate("COVER_LETTER_DOWNLOAD"),
-              isDownload: true,
-            },
-          ].map(({ href, icon, text, isDownload }, index) => (
+          ].map(({ href, icon, text }, index) => (
             <div
               key={index}
               className="transition-all duration-200 hover:scale-105"
             >
-              {isDownload ? (
-                <Link
-                  to={href}
-                  download
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center justify-center gap-x-2 bg-gray-900 text-purple-600 hover:text-pink-600 transition-all duration-200 border-2 border-transparent rounded-lg px-6 py-4 shadow-md hover:shadow-purple-500/30 text-center"
-                >
-                  <span className="text-xl">{icon}</span>
-                  <span className="text-base sm:text-lg">{text}</span>
-                </Link>
-              ) : (
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-x-2 bg-gray-900 text-purple-600 hover:text-pink-600 transition-all duration-200 border-2 border-transparent rounded-lg px-6 py-4 shadow-md hover:shadow-purple-500/30 text-center"
-                >
-                  <span className="text-xl">{icon}</span>
-                  <span className="text-base sm:text-lg">{text}</span>
-                </a>
-              )}
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-x-2 bg-gray-900 text-purple-600 hover:text-pink-600 transition-all duration-200 border-2 border-transparent rounded-lg px-6 py-4 shadow-md hover:shadow-purple-500/30 text-center"
+              >
+                <span className="text-xl">{icon}</span>
+                <span className="text-base sm:text-lg">{text}</span>
+              </a>
             </div>
           ))}
           <button

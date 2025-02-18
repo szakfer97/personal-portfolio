@@ -1,6 +1,7 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPhoneSquareAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { useTranslation } from "../translation/useTranslation";
+import ContactData from "../local/CONTACT.json";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,6 +42,16 @@ export default function Footer() {
             <AiOutlineMail className="inline h-6 w-6 mr-1 animate-pulse" />
             <span className="sr-only sm:not-sr-only">Email</span>
           </a>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              navigator.clipboard.writeText(ContactData.PHONE);
+            }}
+            className="text-purple-600 hover:text-pink-600 flex items-center drop-shadow-[0_0_0.3rem_#fff5]"
+          >
+            <FaPhoneSquareAlt className="inline h-6 w-6 mr-1 animate-pulse" />
+            <span className="text-base sm:text-lg">{ContactData.PHONE}</span>
+          </button>
         </div>
       </div>
     </footer>
